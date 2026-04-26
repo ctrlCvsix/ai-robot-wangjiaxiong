@@ -49,14 +49,6 @@ ros2 run turtle_teleop_key
 
 ## 实验截图
 
-### Docker Version
-<img src="./img/1.png" width="700">
-
-### Docker Hello World
-<img src="./img/2.png" width="700">
-
-### ROS2 Desktop
-<img src="./img/3.png" width="700">
 
 ---
 
