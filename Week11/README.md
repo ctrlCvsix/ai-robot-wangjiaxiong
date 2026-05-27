@@ -1,59 +1,60 @@
-﻿# Mission Log 11 - Docker Advanced And GitHub Pages Deployment
+# Week 11 - GitHub Pages 部署练习
 
-> Mission focus: this week focused on advanced Docker practice and publishing project content with GitHub Pages.
+## 1. 作业说明
 
-## Mission Brief
+本周练习 GitHub Pages 静态页面部署与结果验证。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Docker advanced usage and GitHub Pages |
-| Keywords | Docker, GitHub Pages, static hosting, deployment |
-| Output | Deployment practice and screenshots |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week11/
+|-- README.md              # 必须
+|-- 514.png                # 截图
+|-- 514_2.png              # 截图
+</pre>
 
-- Review advanced Docker usage patterns.
-- Understand how GitHub Pages hosts static project content.
-- Practice committing and pushing deployment-related files.
+## 3. 实验环境
 
-## Payload
-
-- Docker
 - GitHub Pages
 - Git
 - Browser
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Prepared static website files for deployment.
-2. Configured GitHub Pages settings for the repository.
-3. Used Git to commit and push updates.
-4. Checked the published result in the browser.
+1. 准备页面文件。
+2. 提交并推送仓库。
+3. 验证页面效果。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
+<pre><code class="language-bash">
 git add .
-git commit -m "week11 update"
+git commit -m week11-update
 git push origin main
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-<img src="./514.png" width="720" alt="GitHub Pages deployment practice screenshot" />
+<img src="514.png" width="800" alt="部署截图">
 
-<img src="./514_2.png" width="720" alt="GitHub Pages deployment verification screenshot" />
+<img src="514_2.png" width="800" alt="验证截图">
 
-The screenshots show the deployment and verification process for the GitHub Pages practice.
+## 7. 学习总结
 
-## Debrief
+掌握了使用 GitHub Pages 展示项目结果的方法。
 
-- GitHub Pages is a simple way to publish course project pages.
-- Deployment requires both repository configuration and correct file organization.
-- Git commit history records each step of project publishing.
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

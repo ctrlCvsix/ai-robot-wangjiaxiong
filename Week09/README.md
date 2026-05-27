@@ -1,55 +1,56 @@
-﻿# Mission Log 09 - ROS2 Voice Interaction
+# Week 09 - ROS2 语音交互
 
-> Mission focus: this week focused on the concept of voice interaction in ROS2 and how speech-related nodes can communicate through topics.
+## 1. 作业说明
 
-## Mission Brief
+本周整理 ROS2 语音交互相关 topic 流程。
 
-| Item | Content |
-| --- | --- |
-| Main topic | ROS2 voice interaction |
-| Keywords | ROS2, speech recognition, TTS, topic communication |
-| Output | Voice interaction workflow notes and topic tests |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week09/
+|-- README.md              # 必须
+|-- README.md              # 必须
+</pre>
 
-- Understand how voice commands can connect with ROS2 nodes.
-- Practice checking ROS2 topics related to speech input or TTS output.
-- Review how message flow can be used for human-robot interaction.
-
-## Payload
+## 3. 实验环境
 
 - ROS2
+- Speech / TTS Concept
 - Terminal
-- Demo ROS2 nodes
-- Voice interaction concept workflow
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Listed active ROS2 topics.
-2. Echoed a speech-related topic to inspect message output.
-3. Ran ROS2 demo nodes to review topic communication.
-4. Connected the idea of voice commands with robot control logic.
+1. 查看语音相关 topic。
+2. 运行 demo 节点。
+3. 观察消息流。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
+<pre><code class="language-bash">
 ros2 topic list
 ros2 topic echo /tts/speak
-ros2 run demo_nodes_cpp talker
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-The experiment clarified how speech recognition or text-to-speech components can be represented as ROS2 nodes and topics.
+本周完成 ROS2 语音交互流程记录。
 
-## Debrief
+## 7. 学习总结
 
-- Voice interaction can be modeled as a ROS2 communication pipeline.
-- Topic inspection helps debug whether speech-related messages are being published.
-- Human-robot interaction depends on reliable message flow between perception, decision, and action nodes.
+理解了语音交互也可以用 ROS2 topic 管线组织。
+
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

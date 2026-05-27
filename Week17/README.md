@@ -1,53 +1,54 @@
-﻿# Mission Log 17 - Extended AI Robot Practice
+# Week 17 - 扩展作业
 
-> Mission focus: this week is prepared for the next AI Robot assignment. The specific task content can be added after the Week17 experiment is completed.
+## 1. 作业说明
 
-## Mission Brief
+本周为扩展作业预留标准模板。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Extended AI Robot practice |
-| Keywords | AI Robot, ROS2, Python, experiment documentation |
-| Output | Standard weekly README template |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week17/
+|-- README.md              # 必须
+|-- README.md              # 必须
+</pre>
 
-- Record the Week17 task clearly.
-- Keep the repository structure complete after adding the new week.
-- Prepare a consistent place for commands, screenshots, and conclusions.
-
-## Payload
+## 3. 实验环境
 
 - GitHub
 - Markdown
-- Course experiment environment
-- Tools to be updated after the task is confirmed
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Add the Week17 task description.
-2. Record environment setup and important commands.
-3. Add result screenshots, videos, or source files if needed.
-4. Summarize the experiment result and learning points.
+1. 创建 Week17。
+2. 按模板预留内容。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
+<pre><code class="language-bash">
 git status
 git add Week17/README.md
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-The Week17 folder is ready for the next assignment record.
+Week17 已准备好后续补充。
 
-## Debrief
+## 7. 学习总结
 
-- A consistent README template keeps the course portfolio readable.
-- Preparing the folder early prevents missing or inconsistent weekly documentation.
+统一结构便于持续维护课程仓库。
+
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

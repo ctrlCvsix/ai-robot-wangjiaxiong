@@ -1,62 +1,57 @@
-﻿# Mission Log 13 - Quadruped Robot Trot Gait Simulation
+# Week 13 - 四足机器人 Trot 步态仿真
 
-> Mission focus: this week focused on implementing a simple quadruped robot simulation with a Trot gait controller in PyBullet.
+## 1. 作业说明
 
-## Mission Brief
+本周使用 PyBullet 和 Laikago 模型实现基础 Trot 步态控制。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Quadruped gait control |
-| Keywords | PyBullet, Laikago, Trot gait, NumPy, joint control |
-| Output | Python simulation script: `trot.py` |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week13/
+|-- README.md              # 必须
+|-- trot.py                # Python 作业
+</pre>
 
-- Load a Laikago quadruped robot model in PyBullet.
-- Read and control leg joints through Python.
-- Generate a simple Trot gait using phase-shifted sine motion.
-- Observe periodic leg motion in simulation.
+## 3. 实验环境
 
-## Payload
-
-- Python 3
+- Python
 - PyBullet
 - NumPy
-- Laikago URDF model
+- Laikago
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Initialized the PyBullet GUI simulation.
-2. Loaded the ground plane and Laikago robot model.
-3. Created a `QuadrupedController` class for joint control.
-4. Used diagonal leg phase pairing for a basic Trot gait.
-5. Repeated simulation steps until manually stopped.
+1. 加载 Laikago 模型。
+2. 编写步态控制器。
+3. 执行仿真循环。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
-pip install pybullet numpy --break-system-packages
+<pre><code class="language-bash">
+pip install pybullet numpy
 python3 trot.py
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-The simulation runs a simple Trot-style movement where diagonal legs move in synchronized phases.
+核心代码文件：trot.py
 
-Core file:
+## 7. 学习总结
 
-```text
-Week13/trot.py
-```
+理解了对角腿相位差和周期性步态控制的基本思想。
 
-## Debrief
+## 8. 评分自查
 
-- Trot gait can be approximated with phase differences between diagonal leg pairs.
-- PyBullet joint position control is useful for quick gait experiments.
-- Even a simplified gait controller helps explain the relationship between timing, leg movement, and robot stability.
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

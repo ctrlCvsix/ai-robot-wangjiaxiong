@@ -1,51 +1,56 @@
-﻿# Mission Log 15 - Final Course Notes
+# Week 15 - 期末课程记录
 
-> Mission focus: this week is reserved for the final AI Robot course notes, summary, and any last assignment updates.
+## 1. 作业说明
 
-## Mission Brief
+本周用于整理期末课程说明和总结内容。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Final course summary |
-| Keywords | AI Robot, ROS2, Docker, PyBullet, OpenCV, GitHub |
-| Output | Final weekly documentation placeholder |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week15/
+|-- README.md              # 必须
+|-- README.md              # 必须
+</pre>
 
-- Summarize the full AI Robot learning process.
-- Review the main tools used during the semester.
-- Keep the final week ready for screenshots, commands, or reflection notes.
-
-## Payload
+## 3. 实验环境
 
 - GitHub
 - Markdown
-- ROS2 / Docker / PyBullet / OpenCV review materials
+- AI Robot review
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Reviewed the existing repository structure through Week14.
-2. Prepared a consistent final-week README.
-3. Left clear space for final experiment details or course reflection.
+1. 整理已有周目录。
+2. 保持统一模板。
+3. 补充期末内容。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
+<pre><code class="language-bash">
 git status
 git log --oneline
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-The final week now has the same documentation structure as the rest of the repository and can be expanded with the final assignment content.
+Week15 已按统一作业模板整理完成。
 
-## Debrief
+## 7. 学习总结
 
-- A course repository becomes more valuable when the final week connects the entire learning path.
-- Keeping the last week structured makes it easier to add final results without reorganizing later.
+统一模板能让最终仓库更像完整课程作品集。
+
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

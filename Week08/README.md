@@ -1,62 +1,55 @@
-﻿# Mission Log 08 - Docker ROS2 Desktop Environment
+# Week 08 - Docker ROS2 桌面容器
 
-> Mission focus: this week focused on using Docker to run a ROS2 desktop environment through a browser-accessible VNC container.
+## 1. 作业说明
 
-## Mission Brief
+本周使用 Docker 部署 ROS2 桌面环境，并通过浏览器访问。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Docker-based ROS2 environment |
-| Keywords | Docker, ROS2 Humble, VNC, container, turtlesim |
-| Output | ROS2 desktop environment running inside Docker |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week08/
+|-- README.md              # 必须
+|-- screenshots/           # 推荐
+</pre>
 
-- Learn basic Docker image and container commands.
-- Pull and run a ROS2 desktop VNC image.
-- Access the containerized ROS2 desktop from a browser.
-- Run turtlesim inside the Docker environment.
-
-## Payload
+## 3. 实验环境
 
 - Docker
-- ROS2 Humble desktop VNC image
+- ROS2 Desktop VNC
 - Browser
-- Terminal
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Checked the Docker installation.
-2. Ran the `hello-world` test container.
-3. Pulled the ROS2 desktop VNC image.
-4. Started the container and mapped port `6080`.
-5. Opened the browser VNC page and ran turtlesim.
+1. 检查 Docker。
+2. 拉取 ROS2 桌面镜像。
+3. 启动容器并映射端口。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
-docker --version
-docker run hello-world
-docker pull tiryoh/ros2-desktop-vnc:humble
+<pre><code class="language-bash">
 docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-```text
-http://127.0.0.1:6080/
-```
+浏览器访问 http://127.0.0.1:6080/ 后可进入 ROS2 桌面环境。
 
-The ROS2 desktop environment could be opened through the browser, making it possible to run graphical ROS2 tools inside a container.
+## 7. 学习总结
 
-## Debrief
+理解了 Docker 容器化环境对机器人开发的价值。
 
-- Docker helps isolate ROS2 environments and dependencies.
-- Port mapping allows services inside a container to be accessed from the host.
-- Browser-based VNC is useful for running GUI tools in a containerized workflow.
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

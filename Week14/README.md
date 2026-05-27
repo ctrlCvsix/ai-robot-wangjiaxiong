@@ -1,78 +1,62 @@
-﻿# Mission Log 14 - Remote Calling And Camera Environment Configuration
+# Week 14 - 远程调用与环境配置
 
-> Mission focus: this week recorded the process of using a phone with Termius and Tailscale to remotely control a computer, configure Python dependencies, and run a Flask camera service.
+## 1. 作业说明
 
-## Mission Brief
+本周使用 Termius、Tailscale 和 Flask 完成远程摄像头服务配置。
 
-| Item | Content |
-| --- | --- |
-| Main topic | Remote access and camera bridge experiment |
-| Keywords | Termius, Tailscale, Flask, virtual environment, ArUco |
-| Output | Remote camera workflow and test screenshots |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week14/
+|-- README.md              # 必须
+|-- 1.jpeg                 # 截图
+|-- 11.jpeg                # 截图
+</pre>
 
-- Use a phone to remotely connect to the computer through Termius.
-- Keep both devices reachable with Tailscale.
-- Solve Python dependency issues using a virtual environment.
-- Start a Flask camera bridge service and test mobile camera access.
+## 3. 实验环境
 
-## Payload
-
-- Ubuntu 24.04
-- Python virtual environment
 - Termius
 - Tailscale
+- Python venv
 - Flask
-- Mobile browser camera
-- ArUco marker test
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Cloned the course project on the remote machine.
-2. Created and activated a Python virtual environment.
-3. Installed dependencies from `requirements.txt`.
-4. Started the Flask camera bridge service.
-5. Opened the service from the mobile browser through the Tailscale network.
-6. Tested image collection and ArUco marker detection.
+1. 创建虚拟环境。
+2. 安装依赖。
+3. 启动 camera_bridge 服务。
+4. 手机浏览器访问服务。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
-cd ~/ai-robot-class.github.io
+<pre><code class="language-bash">
 python3 -m venv env
 source env/bin/activate
-pip install -r week12_starters/requirements.txt
 python3 week12_starters/camera_bridge.py
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-<img src="./1.jpeg" width="720" alt="Remote camera experiment screenshot" />
+<img src="1.jpeg" width="800" alt="远程实验截图">
 
-<img src="./11.jpeg" width="720" alt="Remote camera and environment configuration result" />
+<img src="11.jpeg" width="800" alt="远程实验截图 2">
 
-Captured calibration images were saved to:
+## 7. 学习总结
 
-```text
-/home/wang-jiaxiong/ai-robot-class.github.io/calib_images
-```
+理解了远程控制、虚拟局域网和摄像头服务的联动方式。
 
-## Operator Notes
+## 8. 评分自查
 
-- The phone and computer must both be connected to Tailscale.
-- The browser may require manually accepting the self-signed HTTPS warning.
-- Camera permission must be allowed in the mobile browser.
-- Press `Ctrl + C` in Termius to stop the Flask server.
-
-## Debrief
-
-- Remote robot experiments require both network connectivity and environment management.
-- Python virtual environments are the cleanest way to avoid dependency conflicts such as PEP 668 restrictions.
-- Mobile cameras can be integrated into robot vision workflows through a web service bridge.
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

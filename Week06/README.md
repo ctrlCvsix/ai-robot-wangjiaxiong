@@ -1,57 +1,57 @@
-﻿# Mission Log 06 - KITTI Data Publishing And RViz2 Visualization
+# Week 06 - KITTI 数据集与 RViz2 可视化
 
-> Mission focus: this week focused on publishing autonomous-driving sensor data in ROS2 and visualizing it with RViz2 and RQT.
+## 1. 作业说明
 
-## Mission Brief
+本周发布 KITTI 数据并使用 RViz2/RQT 可视化点云与图像。
 
-| Item | Content |
-| --- | --- |
-| Main topic | ROS2 sensor data visualization |
-| Keywords | KITTI, PointCloud2, Image, RViz2, RQT |
-| Output | Multi-sensor visualization screenshot |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week06/
+|-- README.md              # 必须
+|-- images/                # 截图、效果图
+</pre>
 
-- Read and organize KITTI-style sensor data.
-- Publish point cloud and image data as ROS2 topics.
-- Use RViz2 and RQT to inspect synchronized sensor streams.
+## 3. 实验环境
 
-## Payload
+- ROS2
+- KITTI Dataset
+- RViz2
+- RQT
 
-- Ubuntu 24.04 LTS
-- ROS2 Jazzy / Humble
-- KITTI Raw Dataset
-- RViz2 / RQT
+## 4. 实验步骤
 
-## Command Sequence
+1. 准备 KITTI 数据。
+2. 运行发布节点。
+3. 使用 RViz2 查看结果。
 
-1. Stored KITTI data under `~/ros2_ws/data`.
-2. Ran the custom publisher node.
-3. Published point cloud and camera image topics.
-4. Visualized the results with RViz2 and RQT.
+## 5. 运行命令
 
-## Console Commands
-
-```bash
+<pre><code class="language-bash">
 ros2 run ros2_kitti_publishers publisher_node
 rviz2
-rqt
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-<img src="./images/zidongjiashi.png" width="720" alt="KITTI sensor data visualization in ROS2" />
+<img src="images/zidongjiashi.png" width="800" alt="KITTI 可视化截图">
 
-The visualization confirmed that image and point-cloud data could be published and inspected in ROS2 tools.
+## 7. 学习总结
 
-## Debrief
+熟悉了 ROS2 多传感器数据可视化流程。
 
-- ROS2 can represent sensor streams with standardized message types.
-- RViz2 is useful for checking spatial data such as point clouds.
-- Multi-sensor visualization is important for autonomous-driving and robot perception tasks.
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)

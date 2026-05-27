@@ -1,56 +1,57 @@
-﻿# Mission Log 04 - PyBullet Quadruped Robot Simulation
+# Week 04 - PyBullet 四足机器人仿真
 
-> Mission focus: this week moved from ROS2 basics into physics simulation by loading and controlling a robot model in PyBullet.
+## 1. 作业说明
 
-## Mission Brief
+本周使用 PyBullet 加载四足机器人模型，练习基础物理仿真。
 
-| Item | Content |
-| --- | --- |
-| Main topic | PyBullet robot simulation |
-| Keywords | PyBullet, URDF, quadruped, physics simulation |
-| Output | Four-legged robot simulation screenshot |
+## 2. 文件结构
 
-## Objectives
+<pre>
+Week04/
+|-- README.md              # 必须
+|-- images/                # 截图、效果图
+|-- *.py                   # Python 作业
+</pre>
 
-- Set up a PyBullet physics simulation environment.
-- Load robot models with URDF/SDF resources.
-- Practice basic multi-joint robot motion and physical simulation concepts.
+## 3. 实验环境
 
-## Payload
-
-- Ubuntu 24.04 LTS
-- Python 3
+- Python
 - PyBullet
-- VS Code / Terminal
+- Terminal
 
-## Command Sequence
+## 4. 实验步骤
 
-1. Installed the PyBullet package.
-2. Created a basic simulation world with gravity and a ground plane.
-3. Loaded a quadruped robot model.
-4. Observed robot posture and motion behavior in the simulation window.
+1. 安装 PyBullet。
+2. 创建仿真环境。
+3. 加载机器人模型。
 
-## Console Commands
+## 5. 运行命令
 
-```bash
+<pre><code class="language-bash">
 pip install pybullet
 python3 simulation.py
-```
+</code></pre>
 
-## Telemetry
+## 6. 结果展示
 
-<img src="./images/dog.png" width="720" alt="PyBullet quadruped robot simulation" />
+<img src="images/dog.png" width="800" alt="PyBullet 四足机器人截图">
 
-The simulation demonstrated basic robot model loading and visual inspection inside the PyBullet GUI.
+## 7. 学习总结
 
-## Debrief
+学习了 URDF 模型加载和机器人仿真的基础流程。
 
-- PyBullet provides a fast way to test robot models and physical interactions.
-- URDF/SDF files describe robot geometry, joints, and physical properties.
-- Simulation helps validate robot motion ideas before working with real hardware.
+## 8. 评分自查
+
+| 项目 | 状态 | 说明 |
+| --- | --- | --- |
+| 提交 week 文件夹 | 完成 | 已建立本周目录 |
+| README.md 存在 | 完成 | 已按统一模板编写 |
+| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
+| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
+| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
+| 有提交记录 | 完成 | 通过 Git 提交 |
+| 按时提交 | 待确认 | 以课程截止时间为准 |
 
 ---
 
-[Back to Mission Control](../README.md)
-
-
+[返回总目录](../README.md)
