@@ -1,121 +1,115 @@
-# AI Robot Course Portfolio
+﻿# AI Robot Mission Control
 
 <div align="center">
 
-![ROS2](https://img.shields.io/badge/ROS2-Humble%20%7C%20Jazzy-22314E?style=for-the-badge&logo=ros&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:0F172A,45:0E7490,100:22C55E&text=AI%20ROBOT%20MISSION%20CONTROL&fontColor=F8FAFC&fontSize=34&fontAlignY=38&desc=ROS2%20%7C%20PyBullet%20%7C%20Docker%20%7C%20OpenCV%20%7C%20Remote%20Vision&descAlignY=58&animation=fadeIn" alt="AI Robot Mission Control banner" />
 
-**Shinhan University AI Robot Course Practice Repository**
+![ROS2](https://img.shields.io/badge/ROS2-signal%20online-0F172A?style=for-the-badge&logo=ros&logoColor=white)
+![Python](https://img.shields.io/badge/Python-control%20core-14532D?style=for-the-badge&logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-orbital%20container-0E7490?style=for-the-badge&logo=docker&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-vision%20deck-7C2D12?style=for-the-badge&logo=opencv&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-ground%20station-7F1D1D?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-From Linux and ROS2 fundamentals to Docker, OpenCV, PyBullet simulation, sensor visualization, and remote robot experiments.
+**A mission-style AI Robot course portfolio by Wang Jiaxiong**
 
-[Weekly Learning Map](#weekly-learning-map) • [Highlights](#highlights) • [Repository Structure](#repository-structure)
+[Mission Index](#mission-index) | [Telemetry Gallery](#telemetry-gallery) | [Control Stack](#control-stack) | [Hangar Map](#hangar-map)
 
 </div>
 
 ---
 
-## About
+## Control Room
 
-This repository records my weekly practice for the **AI Robot** course. It combines environment setup, command-line practice, ROS2 communication, robot simulation, Docker containers, computer vision, GitHub Pages deployment, and remote camera experiments.
+This repository is designed as a **robotics mission log** rather than a plain assignment folder. Each week is treated as a mission: environment setup, ROS2 communication, simulation, vision, deployment, or remote camera operation.
 
-| Field | Detail |
+| Call Sign | Detail |
 | --- | --- |
-| Author | Wang Jiaxiong |
-| Major | Software Engineering |
-| University | Shinhan University |
-| Focus | AI Robot development, ROS2, simulation, vision, deployment |
+| Operator | Wang Jiaxiong |
+| Program | Software Engineering |
+| Base | Shinhan University |
+| Mission Domain | AI Robot development and experiment documentation |
+| Current Mode | Course portfolio / robot lab archive |
 
-## Highlights
+## Mission Signature
 
-- Built ROS2 development environments on Ubuntu and practiced topic/node workflows.
-- Simulated robot motion with PyBullet, including quadruped motion and robotic-arm inverse kinematics.
-- Used RViz2/RQT to visualize KITTI-style autonomous-driving sensor data.
-- Practiced Docker-based ROS2 desktop environments and OpenCV experiments.
-- Documented remote access workflows with Termius, Tailscale, Flask, and mobile camera testing.
+- **Ground station setup**: Ubuntu, ROS2, GitHub, and repeatable documentation.
+- **Robot motion lab**: turtlesim control, PyBullet quadruped simulation, robotic-arm IK, and Trot gait control.
+- **Vision deck**: KITTI visualization, OpenCV experiments, RGB/depth/segmentation camera concepts, and ArUco testing.
+- **Deployment bay**: Docker ROS2 desktop, browser VNC workflow, and GitHub Pages practice.
+- **Remote operation**: Termius, Tailscale, Flask camera bridge, and mobile camera access.
 
-## Featured Results
+## Telemetry Gallery
 
-| ROS2 Turtlesim | PyBullet Quadruped | Sensor Visualization |
+| Navigation Test | Simulation Bay | Sensor Deck |
 | --- | --- | --- |
-| <img src="./Week02/images/xiaowugui.png" width="260" alt="ROS2 turtlesim result" /> | <img src="./Week04/images/dog.png" width="260" alt="PyBullet quadruped simulation" /> | <img src="./Week06/images/zidongjiashi.png" width="260" alt="ROS2 KITTI visualization" /> |
+| <img src="./Week02/images/xiaowugui.png" width="260" alt="ROS2 turtlesim verification result" /> | <img src="./Week04/images/dog.png" width="260" alt="PyBullet quadruped simulation" /> | <img src="./Week06/images/zidongjiashi.png" width="260" alt="ROS2 KITTI visualization" /> |
 
-| Docker / Pages Practice | Remote Camera Experiment |
+| Deployment Console | Remote Vision Link |
 | --- | --- |
-| <img src="./Week11/514.png" width="360" alt="Docker and GitHub Pages practice" /> | <img src="./Week14/1.jpeg" width="360" alt="Remote camera experiment" /> |
+| <img src="./Week11/514.png" width="360" alt="GitHub Pages deployment practice" /> | <img src="./Week14/1.jpeg" width="360" alt="Remote camera experiment" /> |
 
-## Weekly Learning Map
+## Mission Index
 
-| Week | Topic | Main Practice | Link |
-| --- | --- | --- | --- |
-| Week02 | Ubuntu and ROS2 environment setup | Turtlesim environment verification | [Open](./Week02) |
-| Week03 | ROS2 topics and path control | Turtlesim topic communication | [Open](./Week03) |
-| Week04 | PyBullet quadruped simulation | Robot model loading and motion simulation | [Open](./Week04) |
-| Week05 | Robotic-arm IK and visual simulation | Inverse kinematics, RGB/depth/segmentation camera | [Open](./Week05) |
-| Week06 | KITTI publishing and RViz2 visualization | Point cloud and image topic visualization | [Open](./Week06) |
-| Week08 | Docker ROS2 desktop | Container setup and browser access | [Open](./Week08) |
-| Week09 | ROS2 voice interaction | Voice interaction workflow notes | [Open](./Week09) |
-| Week10 | Docker concepts and OpenCV | Container and vision experiment | [Open](./Week10) |
-| Week11 | Docker advanced and GitHub Pages | Static site deployment practice | [Open](./Week11) |
-| Week13 | Quadruped gait simulation | Laikago model and Trot gait control | [Open](./Week13) |
-| Week14 | Remote calling and environment configuration | Termius, Tailscale, Flask camera bridge | [Open](./Week14) |
-| Week15 | Final course notes | In progress | [Open](./Week15) |
-| Week16 | Extended course practice | To be updated with the Week16 task | [Open](./Week16) |
-| Week17 | Extended course practice | To be updated with the Week17 task | [Open](./Week17) |
+| Mission | Codename | Objective | Status | Log |
+| --- | --- | --- | --- | --- |
+| Week02 | Ground Station | Ubuntu and ROS2 environment verification | Complete | [Open](./Week02) |
+| Week03 | Turtle Vector | ROS2 topic publishing and path control | Complete | [Open](./Week03) |
+| Week04 | Quadruped Bay | PyBullet robot model loading and motion simulation | Complete | [Open](./Week04) |
+| Week05 | Arm Vision | Robotic-arm IK with RGB/depth/segmentation sensing | Complete | [Open](./Week05) |
+| Week06 | Sensor Orbit | KITTI data publishing and RViz2 visualization | Complete | [Open](./Week06) |
+| Week08 | Container Dock | Docker ROS2 desktop and browser VNC access | Complete | [Open](./Week08) |
+| Week09 | Voice Channel | ROS2 voice interaction workflow | Complete | [Open](./Week09) |
+| Week10 | Vision Forge | Docker concepts and OpenCV experiment | Complete | [Open](./Week10) |
+| Week11 | Launch Pad | GitHub Pages deployment practice | Complete | [Open](./Week11) |
+| Week13 | Trot Engine | Laikago Trot gait control in PyBullet | Complete | [Open](./Week13) |
+| Week14 | Remote Lens | Termius, Tailscale, Flask camera bridge | Complete | [Open](./Week14) |
+| Week15 | Debrief Deck | Final course notes and review space | Ready | [Open](./Week15) |
+| Week16 | Expansion Slot | Next extended AI Robot mission | Ready | [Open](./Week16) |
+| Week17 | Final Uplink | Next extended AI Robot mission | Ready | [Open](./Week17) |
 
-## Tech Stack
+## Control Stack
 
-| Area | Tools |
+| Layer | Tools |
 | --- | --- |
-| Robot framework | ROS2 Humble / Jazzy, RViz2, RQT |
-| Simulation | PyBullet, URDF models |
-| Vision | OpenCV, RGB/depth/segmentation data |
-| Runtime | Ubuntu 24.04, Linux command line, Docker |
-| Programming | Python, NumPy |
-| Collaboration | Git, GitHub, GitHub Pages |
-| Remote workflow | Termius, Tailscale, Flask |
+| Robot OS | ROS2 Humble / Jazzy, RViz2, RQT |
+| Simulation | PyBullet, URDF models, Laikago, robotic arm IK |
+| Vision | OpenCV, KITTI data, RGB/depth/segmentation, ArUco |
+| Runtime | Ubuntu 24.04, Linux terminal, Docker |
+| Code | Python, NumPy |
+| Publishing | Git, GitHub, GitHub Pages |
+| Remote Ops | Termius, Tailscale, Flask, mobile browser camera |
 
-## Repository Structure
+## Hangar Map
 
 ```text
 ai-robot-wangjiaxiong/
-├── README.md
-├── Week02/              # Ubuntu / ROS2 / turtlesim
-├── Week03/              # ROS2 topic communication
-├── Week04/              # PyBullet quadruped simulation
-├── Week05/              # Robotic arm IK and visual sensing
-├── Week06/              # KITTI data and RViz2 visualization
-├── Week08/              # Docker ROS2 desktop
-├── Week09/              # ROS2 voice interaction
-├── Week10/              # Docker and OpenCV
-├── Week11/              # GitHub Pages deployment
-├── Week13/              # Trot gait simulation
-├── Week14/              # Remote camera experiment
-├── Week15/              # Final notes
-├── Week16/              # Extended practice
-└── Week17/              # Extended practice
+|-- README.md             # Mission Control home
+|-- Week02/               # Ground station: Ubuntu / ROS2 / turtlesim
+|-- Week03/               # Turtle vector: ROS2 topic communication
+|-- Week04/               # Quadruped bay: PyBullet simulation
+|-- Week05/               # Arm vision: IK and virtual sensing
+|-- Week06/               # Sensor orbit: KITTI and RViz2
+|-- Week08/               # Container dock: Docker ROS2 desktop
+|-- Week09/               # Voice channel: ROS2 voice interaction
+|-- Week10/               # Vision forge: Docker and OpenCV
+|-- Week11/               # Launch pad: GitHub Pages deployment
+|-- Week13/               # Trot engine: quadruped gait control
+|-- Week14/               # Remote lens: phone camera bridge
+|-- Week15/               # Debrief deck: final notes
+|-- Week16/               # Expansion slot
+`-- Week17/               # Final uplink
 ```
 
-## How To Explore
+## Navigation Protocol
 
-1. Start with the [Weekly Learning Map](#weekly-learning-map).
-2. Open a week folder to read the experiment goal, environment, commands, and result notes.
-3. Check image and video assets inside weekly folders for screenshots and demonstrations.
-
-## Learning Goals
-
-- Understand ROS2 node, topic, and visualization workflows.
-- Build confidence with Linux, Docker, Git, and GitHub-based project organization.
-- Practice Python robot programming and simulation.
-- Connect AI robot concepts with real sensor, camera, and remote-control experiments.
+1. Start from the [Mission Index](#mission-index).
+2. Open any weekly mission log to see its objective, payload, command sequence, telemetry, and debrief.
+3. Use the gallery and linked assets to inspect screenshots, videos, and experiment results.
 
 ---
 
 <div align="center">
 
-**AI Robot learning archive by Wang Jiaxiong**
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:22C55E,55:0E7490,100:0F172A" alt="footer wave" />
 
 </div>
