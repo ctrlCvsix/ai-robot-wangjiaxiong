@@ -1,65 +1,56 @@
-# Week8 - Docker ROS2
+# Week 08 - Docker ROS2 Desktop Environment
 
-## 实验目标
+> This week focused on using Docker to run a ROS2 desktop environment through a browser-accessible VNC container.
 
-学习 Docker 的基本使用，并在 Docker 容器中运行 ROS2 图形化桌面环境。
+## Overview
 
----
+| Item | Content |
+| --- | --- |
+| Main topic | Docker-based ROS2 environment |
+| Keywords | Docker, ROS2 Humble, VNC, container, turtlesim |
+| Output | ROS2 desktop environment running inside Docker |
 
-## 操作过程
+## Goals
 
-### 1. 检查 Docker
+- Learn basic Docker image and container commands.
+- Pull and run a ROS2 desktop VNC image.
+- Access the containerized ROS2 desktop from a browser.
+- Run turtlesim inside the Docker environment.
+
+## Environment And Tools
+
+- Docker
+- ROS2 Humble desktop VNC image
+- Browser
+- Terminal
+
+## Task Workflow
+
+1. Checked the Docker installation.
+2. Ran the `hello-world` test container.
+3. Pulled the ROS2 desktop VNC image.
+4. Started the container and mapped port `6080`.
+5. Opened the browser VNC page and ran turtlesim.
+
+## Key Commands
 
 ```bash
 docker --version
-```
-
-### 2. 测试 Docker
-
-```bash
 docker run hello-world
-```
-
-### 3. 拉取 ROS2 镜像
-
-```bash
 docker pull tiryoh/ros2-desktop-vnc:humble
-```
-
-### 4. 运行容器
-
-```bash
 docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
 ```
 
-### 5. 浏览器访问
+## Result
 
 ```text
 http://127.0.0.1:6080/
 ```
 
-### 6. 运行 turtlesim
+The ROS2 desktop environment could be opened through the browser, making it possible to run graphical ROS2 tools inside a container.
 
-```bash
-ros2 run turtlesim turtlesim_node
-ros2 run turtle_teleop_key
-```
+## What I Learned
 
----
-
-## 实验截图
-
-### Docker Version
-<img src="./img/1.png" width="700">
-
-### Docker Hello World
-<img src="./img/2.png" width="700">
-
-### ROS2 Desktop
-<img src="./img/3.png" width="700">
-
----
-
-## 总结
-
-通过 Docker 运行 ROS2，我理解了容器化环境部署方式，并成功在浏览器中运行了 ROS2 图形化桌面和 turtlesim。
+- Docker helps isolate ROS2 environments and dependencies.
+- Port mapping allows services inside a container to be accessed from the host.
+- Browser-based VNC is useful for running GUI tools in a containerized workflow.

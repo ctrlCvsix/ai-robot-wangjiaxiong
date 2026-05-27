@@ -1,64 +1,72 @@
-# Week 12 远程调用与环境配置记录
+# Week 14 - Remote Calling And Camera Environment Configuration
 
-本项目记录了如何使用手机端 Termius 远程控制电脑，克隆作业仓库，解决 Python 环境依赖冲突，并最终成功启动摄像头服务的全过程。
+> This week recorded the process of using a phone with Termius and Tailscale to remotely control a computer, configure Python dependencies, and run a Flask camera service.
 
-## 文件与目录结构
+## Overview
 
-通过 Git 将远程仓库克隆至本地，目录结构如下：
+| Item | Content |
+| --- | --- |
+| Main topic | Remote access and camera bridge experiment |
+| Keywords | Termius, Tailscale, Flask, virtual environment, ArUco |
+| Output | Remote camera workflow and test screenshots |
 
-```text
-~/ai-robot-class.github.io/
-└── week12_starters/
-    ├── camera_bridge.py
-    └── requirements.txt
+## Goals
 
-```
+- Use a phone to remotely connect to the computer through Termius.
+- Keep both devices reachable with Tailscale.
+- Solve Python dependency issues using a virtual environment.
+- Start a Flask camera bridge service and test mobile camera access.
 
-## 安装依赖与环境配置
+## Environment And Tools
 
-针对 Ubuntu 24.04 及后续版本中关于 `PEP 668`（外部管理环境）的限制，本项目通过创建 Python 虚拟环境（Virtual Environment）来解决依赖冲突问题：
+- Ubuntu 24.04
+- Python virtual environment
+- Termius
+- Tailscale
+- Flask
+- Mobile browser camera
+- ArUco marker test
+
+## Task Workflow
+
+1. Cloned the course project on the remote machine.
+2. Created and activated a Python virtual environment.
+3. Installed dependencies from `requirements.txt`.
+4. Started the Flask camera bridge service.
+5. Opened the service from the mobile browser through the Tailscale network.
+6. Tested image collection and ArUco marker detection.
+
+## Key Commands
 
 ```bash
-# 1. 进入克隆好的项目根目录
 cd ~/ai-robot-class.github.io
-
-# 2. 创建独立虚拟环境 env
 python3 -m venv env
-
-# 3. 激活虚拟环境
 source env/bin/activate
-
-# 4. 在虚拟环境中成功安装依赖
 pip install -r week12_starters/requirements.txt
-
-```
-
-## 运行方式
-
-1. **网络连接**：手机与电脑同时开启 **Tailscale**，确保双方处于同一虚拟局域网。
-2. **远程控制**：手机打开 **Termius**，配置 Host 并通过电脑的 Tailscale IP (`100.118.234.115`) 远程连接。
-3. **启动服务**：在手机 Termius 的虚拟环境下，直接执行以下命令启动 Flask 服务器：
-```bash
 python3 week12_starters/camera_bridge.py
-
 ```
 
+## Result
 
-4. **移动端查看**：保持 Termius 在后台运行，打开手机浏览器访问以下地址：
+<img src="./1.jpeg" width="720" alt="Remote camera experiment screenshot" />
+
+<img src="./11.jpeg" width="720" alt="Remote camera and environment configuration result" />
+
+Captured calibration images were saved to:
+
 ```text
-[https://100.118.234.115:5000](https://100.118.234.115:5000)
-
+/home/wang-jiaxiong/ai-robot-class.github.io/calib_images
 ```
 
+## Notes
 
-*注意：访问时需手动忽略浏览器的 https 自签名证书安全警告，并允许网页调用手机摄像头。*
+- The phone and computer must both be connected to Tailscale.
+- The browser may require manually accepting the self-signed HTTPS warning.
+- Camera permission must be allowed in the mobile browser.
+- Press `Ctrl + C` in Termius to stop the Flask server.
 
-## 实际使用与测试流程
+## What I Learned
 
-* **数据保存**：手机端浏览器成功调用摄像头后，采集并保存的标定图片会自动写入电脑的路径：`/home/wang-jiaxiong/ai-robot-class.github.io/calib_images`
-* **ArUco 码检测测试**：使用手机摄像头对准符合 `DICT_4X4_50` 字典且 ID 为 `0` 的 ArUco 黑白方块标记，程序可进行实时识别。
-* **终止服务**：测试完成后，切回手机 Termius 终端，在键盘上按下 `Ctrl + C` 组合键即可关闭服务器。
-
-```
-
-```
+- Remote robot experiments require both network connectivity and environment management.
+- Python virtual environments are the cleanest way to avoid dependency conflicts such as PEP 668 restrictions.
+- Mobile cameras can be integrated into robot vision workflows through a web service bridge.

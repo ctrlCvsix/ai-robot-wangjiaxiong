@@ -1,36 +1,49 @@
-# Week 05：PyBullet 机械臂逆运动学与视觉仿真
+# Week 05 - Robotic Arm IK And Visual Simulation
 
-## 1. 实验目标
-- 学习在 PyBullet 中加载复杂的机械臂 URDF 模型（如 Panda 或类似工业机械臂）。
-- 掌握机械臂的**逆运动学 (Inverse Kinematics, IK)** 计算，实现末端执行器的精准定位。
-- 配置仿真环境中的虚拟相机，获取多维度传感器数据。
+> This week focused on robotic-arm inverse kinematics and simulated visual sensing in PyBullet.
 
-## 2. 实验环境
-- **操作系统**: Ubuntu 24.04 LTS
-- **物理引擎**: PyBullet
-- **视觉组件**: Synthetic Camera (RGB, Depth, Segmentation)
+## Overview
 
-## 3. 实验内容与步骤
+| Item | Content |
+| --- | --- |
+| Main topic | Robotic arm control and camera simulation |
+| Keywords | PyBullet, inverse kinematics, RGB, depth, segmentation |
+| Output | Robotic-arm motion video and sensor-view experiment |
 
-### 3.1 场景搭建
-在仿真环境中添加了桌面（Table）和固定在桌面上的机械臂模型。通过设置初始末端位姿：
-- **初始末端位置**: `(0.835, 0.100, 1.435)`
-- **关节总数**: 12 (包含末端夹爪)
+## Goals
 
-### 3.2 运动控制
-利用 PyBullet 内置的 `calculateInverseKinematics` 接口，根据目标坐标计算各关节旋转角度，实现机械臂平滑的运动轨迹。
+- Load a complex robotic-arm URDF model in PyBullet.
+- Use inverse kinematics to move the end effector toward target positions.
+- Configure virtual camera outputs for RGB, depth, and segmentation data.
 
-### 3.3 视觉传感器仿真
-实验中配置了同步相机输出，实时捕获以下视图：
-1. **Synthetic Camera RGB data**: 机械臂作业的彩色画面。
-2. **Synthetic Camera Depth data**: 用于距离感知的深度信息。
-3. **Synthetic Camera Segmentation mask**: 用于目标识别的语义分割图像。
+## Environment And Tools
 
-## 4. 运行结果展示
-> **实验录屏：**
-![机械臂仿真](./images/jixiebi.webm)
+- Ubuntu 24.04 LTS
+- Python 3
+- PyBullet
+- Synthetic camera data
 
-*图注：图中展示了机械臂在执行运动任务，左侧三个子窗口分别显示了 RGB、深度和分割图像流，证明了仿真环境具有高度的感知真实性。*
+## Task Workflow
 
-## 5. 实验总结
-本周实验从基础的物理碰撞进阶到了复杂的机械臂控制。通过视觉传感器的引入，我理解了机器人是如何“看”世界并进行空间决策的。这为后续实现“视觉抓取”等高级任务提供了技术支持。
+1. Built a simulated scene with a table and robotic arm.
+2. Checked the initial end-effector position: `(0.835, 0.100, 1.435)`.
+3. Used `calculateInverseKinematics` to calculate joint positions.
+4. Captured multiple camera views from the simulation.
+
+## Key Commands
+
+```python
+joint_poses = p.calculateInverseKinematics(robot_id, end_effector_id, target_position)
+```
+
+## Result
+
+[View experiment video](./images/jixiebi.webm)
+
+The experiment showed robotic-arm movement together with RGB, depth, and segmentation camera outputs.
+
+## What I Learned
+
+- Inverse kinematics converts a target end-effector pose into joint angles.
+- Virtual cameras can simulate perception data used by robot vision systems.
+- Combining motion control and visual sensing is a key step toward intelligent manipulation.

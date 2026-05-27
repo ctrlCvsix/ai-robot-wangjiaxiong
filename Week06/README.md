@@ -1,22 +1,51 @@
-# Week 06：ROS2 Kitti 数据集发布与 Rviz2 可视化
+# Week 06 - KITTI Data Publishing And RViz2 Visualization
 
-## 1. 实验目标
-- 学习如何在 ROS2 环境下读取并解析自动驾驶数据集（Kitti）。
-- 编写发布者节点，将点云数据（PointCloud2）和图像数据（Image）发布到对应的 Topic。
-- 使用 Rviz2 和 RQT 进行多传感器数据的同步可视化。
+> This week focused on publishing autonomous-driving sensor data in ROS2 and visualizing it with RViz2 and RQT.
 
-## 2. 实验环境
-- **操作系统**: Ubuntu 24.04 LTS
-- **机器人框架**: ROS2 (Jazzy/Humble)
-- **数据集**: Kitti Raw Dataset
-- **工具**: RViz2, RQT
+## Overview
 
-## 3. 实验内容与步骤
+| Item | Content |
+| --- | --- |
+| Main topic | ROS2 sensor data visualization |
+| Keywords | KITTI, PointCloud2, Image, RViz2, RQT |
+| Output | Multi-sensor visualization screenshot |
 
-### 3.1 数据准备
-将 Kitti 数据集存放于 `~/ros2_ws/data` 路径下，包含点云二进制文件和相机图像。
+## Goals
 
-### 3.2 节点运行
-通过自定义的 `ros2_kitti_publishers` 扩展包运行发布节点：
+- Read and organize KITTI-style sensor data.
+- Publish point cloud and image data as ROS2 topics.
+- Use RViz2 and RQT to inspect synchronized sensor streams.
+
+## Environment And Tools
+
+- Ubuntu 24.04 LTS
+- ROS2 Jazzy / Humble
+- KITTI Raw Dataset
+- RViz2 / RQT
+
+## Task Workflow
+
+1. Stored KITTI data under `~/ros2_ws/data`.
+2. Ran the custom publisher node.
+3. Published point cloud and camera image topics.
+4. Visualized the results with RViz2 and RQT.
+
+## Key Commands
+
 ```bash
 ros2 run ros2_kitti_publishers publisher_node
+rviz2
+rqt
+```
+
+## Result
+
+<img src="./images/zidongjiashi.png" width="720" alt="KITTI sensor data visualization in ROS2" />
+
+The visualization confirmed that image and point-cloud data could be published and inspected in ROS2 tools.
+
+## What I Learned
+
+- ROS2 can represent sensor streams with standardized message types.
+- RViz2 is useful for checking spatial data such as point clouds.
+- Multi-sensor visualization is important for autonomous-driving and robot perception tasks.

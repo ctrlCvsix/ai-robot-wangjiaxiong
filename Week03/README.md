@@ -1,18 +1,51 @@
-# Week 03：ROS 2 话题通信与小乌龟路径控制
+# Week 03 - ROS2 Topic Communication And Turtlesim Control
 
-## 1. 实验目标
-- 深入理解 ROS 2 的话题 (Topic) 通信机制。
-- 学习如何通过终端命令行手动发布消息（ros2 topic pub）。
-- 观察并分析 `geometry_msgs/msg/Twist` 消息结构对机器人运动的影响。
+> This week focused on ROS2 topic communication and controlling turtlesim movement through command-line message publishing.
 
-## 2. 实验环境
-- **操作系统**: Ubuntu 24.04 LTS
-- **机器人框架**: ROS 2 (Jazzy/Humble)
-- **核心概念**: 话题发布者 (Publisher)、消息类型 (Twist)
+## Overview
 
-## 3. 实验内容与步骤
+| Item | Content |
+| --- | --- |
+| Main topic | ROS2 topic communication |
+| Keywords | ROS2, topic, publisher, Twist, turtlesim |
+| Output | Turtlesim motion control through topic commands |
 
-### 3.1 启动仿真环境
-首先启动小乌龟仿真节点：
+## Goals
+
+- Understand the ROS2 Topic communication model.
+- Learn how publishers send messages to running nodes.
+- Practice controlling robot motion with `geometry_msgs/msg/Twist`.
+
+## Environment And Tools
+
+- Ubuntu 24.04 LTS
+- ROS2 Jazzy / Humble
+- turtlesim
+- Terminal
+
+## Task Workflow
+
+1. Started the turtlesim simulation node.
+2. Checked available ROS2 topics.
+3. Published velocity messages to control movement.
+4. Observed how linear and angular values changed the turtle path.
+
+## Key Commands
+
 ```bash
 ros2 run turtlesim turtlesim_node
+ros2 topic list
+ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 1.8}}"
+```
+
+## Result
+
+<img src="./images/dawugui.png" width="720" alt="ROS2 turtlesim path control result" />
+
+The turtle moved according to the published velocity messages, showing the relationship between ROS2 topics and robot motion control.
+
+## What I Learned
+
+- ROS2 topics decouple message senders and receivers.
+- `Twist` messages can describe both forward movement and rotation.
+- Command-line publishing is useful for quickly testing robot behavior.

@@ -1,18 +1,50 @@
-# Week 01：Ubuntu 24.04 环境搭建与 ROS2 初探
+# Week 02 - Ubuntu 24.04 And ROS2 Environment Setup
 
-## 1. 实验目标
-- 在本地设备上安装并配置 Ubuntu 24.04 操作系统。
-- 完成 ROS2 (Jazzy/Humble) 的环境安装。
-- 通过运行经典的“小乌龟” (Turtlesim) 案例，验证 ROS2 环境的完整性并学习基本的节点通信。
+> This week focused on installing the Linux and ROS2 environment, then verifying the setup with the classic turtlesim demo.
 
-## 2. 实验环境
-- **操作系统**: Ubuntu 24.04 LTS
-- **机器人框架**: ROS2 (Jazzy Jalisco)
-- **开发工具**: VS Code, Terminal
+## Overview
 
-## 3. 实验步骤与内容
+| Item | Content |
+| --- | --- |
+| Main topic | Ubuntu and ROS2 environment setup |
+| Keywords | Ubuntu 24.04, ROS2 Jazzy, turtlesim, terminal |
+| Output | Verified ROS2 desktop environment and turtlesim result |
 
-### 3.1 环境安装
-按照官方文档配置了软件源，并安装了 `ros-desktop` 核心组件。设置了环境变量：
+## Goals
+
+- Install and configure Ubuntu 24.04 for robot development.
+- Install ROS2 and prepare shell environment variables.
+- Run turtlesim to confirm that ROS2 nodes and GUI tools work correctly.
+
+## Environment And Tools
+
+- Ubuntu 24.04 LTS
+- ROS2 Jazzy / Humble concepts
+- Terminal
+- VS Code
+
+## Task Workflow
+
+1. Configured the Ubuntu development environment.
+2. Installed ROS2 desktop components.
+3. Loaded the ROS2 environment in the terminal.
+4. Ran turtlesim to verify the installation.
+
+## Key Commands
+
 ```bash
 source /opt/ros/jazzy/setup.bash
+ros2 run turtlesim turtlesim_node
+```
+
+## Result
+
+<img src="./images/xiaowugui.png" width="720" alt="ROS2 turtlesim verification result" />
+
+The turtlesim window confirmed that the ROS2 graphical demo could run successfully in the configured environment.
+
+## What I Learned
+
+- ROS2 needs the environment setup script to be sourced before using ROS2 commands.
+- Turtlesim is a simple but useful way to check whether ROS2 installation and GUI support are working.
+- A stable Ubuntu and ROS2 environment is the base for later robot experiments.

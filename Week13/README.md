@@ -1,103 +1,56 @@
-# README 总结
+# Week 13 - Quadruped Robot Trot Gait Simulation
 
-## 项目名称
+> This week focused on implementing a simple quadruped robot simulation with a Trot gait controller in PyBullet.
 
-四足机器人 PyBullet 仿真项目
+## Overview
 
----
+| Item | Content |
+| --- | --- |
+| Main topic | Quadruped gait control |
+| Keywords | PyBullet, Laikago, Trot gait, NumPy, joint control |
+| Output | Python simulation script: `trot.py` |
 
-## 项目内容
+## Goals
 
-本项目基于 Python 与 PyBullet 实现了简单四足机器人运动仿真，包括：
+- Load a Laikago quadruped robot model in PyBullet.
+- Read and control leg joints through Python.
+- Generate a simple Trot gait using phase-shifted sine motion.
+- Observe periodic leg motion in simulation.
 
-* PyBullet 环境搭建
-* 基础物理仿真
-* 四足机器人模型加载
-* 机器人关节读取
-* Trot 步态控制
-* 简单运动控制实验
+## Environment And Tools
 
----
+- Python 3
+- PyBullet
+- NumPy
+- Laikago URDF model
 
-## 使用技术
+## Task Workflow
 
-* Python 3
-* PyBullet
-* NumPy
+1. Initialized the PyBullet GUI simulation.
+2. Loaded the ground plane and Laikago robot model.
+3. Created a `QuadrupedController` class for joint control.
+4. Used diagonal leg phase pairing for a basic Trot gait.
+5. Repeated simulation steps until manually stopped.
 
----
+## Key Commands
 
-## 实现功能
-
-### 1. 基础物理仿真
-
-实现：
-
-* 重力系统
-* 地面加载
-* 立方体掉落实验
-
----
-
-### 2. 四足机器人加载
-
-加载：
-
-* Laikago 四足机器人 URDF 模型
-
-实现：
-
-* 机器人显示
-* 关节信息读取
-
----
-
-### 3. Trot 步态控制
-
-通过：
-
-* 正弦函数
-* 相位差控制
-
-实现：
-
-* 对角腿同步运动
-* 基础 Trot 步态
-
----
-
-## 项目运行
-
-安装依赖：
-
-```bash id="k6k8gw"
+```bash
 pip install pybullet numpy --break-system-packages
+python3 trot.py
 ```
 
-运行：
+## Result
 
-```bash id="a6xv5r"
-python3 gait.py
+The simulation runs a simple Trot-style movement where diagonal legs move in synchronized phases.
+
+Core file:
+
+```text
+Week13/trot.py
 ```
 
----
+## What I Learned
 
-## 项目效果
-
-运行后可以看到：
-
-* 四足机器人在平面上运动
-* 腿部周期性摆动
-* 基础步态仿真效果
-
----
-
-## 学习收获
-
-通过本项目学习了：
-
-* PyBullet 基础使用
-* URDF 模型加载
-* 机器人关节控制
-* 四足机器人步态原理
-* 基础机器人运动控制思想
+- Trot gait can be approximated with phase differences between diagonal leg pairs.
+- PyBullet joint position control is useful for quick gait experiments.
+- Even a simplified gait controller helps explain the relationship between timing, leg movement, and robot stability.

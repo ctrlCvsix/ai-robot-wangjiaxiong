@@ -1,19 +1,50 @@
-# Week 04：基于 PyBullet 的四足机器人运动仿真
+# Week 04 - PyBullet Quadruped Robot Simulation
 
-## 1. 实验目标
-- 搭建 PyBullet 物理仿真环境。
-- 学习导入 URDF/SDF 格式的机器人模型。
-- 通过 Python 脚本控制多关节（关节空间）机器人运动，并进行物理属性（如碰撞检测、摩擦力）的仿真验证。
+> This week moved from ROS2 basics into physics simulation by loading and controlling a robot model in PyBullet.
 
-## 2. 实验环境
-- **操作系统**: Ubuntu 24.04 LTS
-- **物理引擎**: PyBullet (Bullet Physics Engine)
-- **编程语言**: Python 3
-- **开发工具**: VS Code, Terminal
+## Overview
 
-## 3. 实验步骤与内容
+| Item | Content |
+| --- | --- |
+| Main topic | PyBullet robot simulation |
+| Keywords | PyBullet, URDF, quadruped, physics simulation |
+| Output | Four-legged robot simulation screenshot |
 
-### 3.1 安装与环境配置
-首先安装了 PyBullet 库：
+## Goals
+
+- Set up a PyBullet physics simulation environment.
+- Load robot models with URDF/SDF resources.
+- Practice basic multi-joint robot motion and physical simulation concepts.
+
+## Environment And Tools
+
+- Ubuntu 24.04 LTS
+- Python 3
+- PyBullet
+- VS Code / Terminal
+
+## Task Workflow
+
+1. Installed the PyBullet package.
+2. Created a basic simulation world with gravity and a ground plane.
+3. Loaded a quadruped robot model.
+4. Observed robot posture and motion behavior in the simulation window.
+
+## Key Commands
+
 ```bash
 pip install pybullet
+python3 simulation.py
+```
+
+## Result
+
+<img src="./images/dog.png" width="720" alt="PyBullet quadruped robot simulation" />
+
+The simulation demonstrated basic robot model loading and visual inspection inside the PyBullet GUI.
+
+## What I Learned
+
+- PyBullet provides a fast way to test robot models and physical interactions.
+- URDF/SDF files describe robot geometry, joints, and physical properties.
+- Simulation helps validate robot motion ideas before working with real hardware.
