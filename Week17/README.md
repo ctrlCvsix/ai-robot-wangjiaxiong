@@ -1,54 +1,42 @@
-# Week 17 - 扩展作业
+# Week 17 - Extended Practice Slot
 
-## 1. 作业说明
+## Lab Objective
 
-本周为扩展作业预留标准模板。
+This page reserves a structured location for the next AI Robot assignment.
 
-## 2. 文件结构
+## Folder Structure
 
 <pre>
 Week17/
-|-- README.md              # 必须
-|-- README.md              # 必须
+|-- README.md              # weekly lab report
+|-- README.md              # lab report
 </pre>
 
-## 3. 实验环境
+## Environment
 
 - GitHub
 - Markdown
 
-## 4. 实验步骤
+## Workflow
 
-1. 创建 Week17。
-2. 按模板预留内容。
+1. Keep the folder ready.
+2. Add task details when assigned.
 
-## 5. 运行命令
+## Commands
 
 <pre><code class="language-bash">
 git status
 git add Week17/README.md
 </code></pre>
 
-## 6. 结果展示
+## Evidence
 
-Week17 已准备好后续补充。
+Week17 is prepared as an expandable lab page.
 
-## 7. 学习总结
+## Reflection
 
-统一结构便于持续维护课程仓库。
-
-## 8. 评分自查
-
-| 项目 | 状态 | 说明 |
-| --- | --- | --- |
-| 提交 week 文件夹 | 完成 | 已建立本周目录 |
-| README.md 存在 | 完成 | 已按统一模板编写 |
-| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
-| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
-| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
-| 有提交记录 | 完成 | 通过 Git 提交 |
-| 按时提交 | 待确认 | 以课程截止时间为准 |
+A ready template keeps the archive consistent.
 
 ---
 
-[返回总目录](../README.md)
+[Back to Lab Navigator](../README.md)

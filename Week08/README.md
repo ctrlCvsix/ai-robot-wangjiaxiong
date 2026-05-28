@@ -1,55 +1,43 @@
-# Week 08 - Docker ROS2 桌面容器
+# Week 08 - Docker ROS2 Desktop Container
 
-## 1. 作业说明
+## Lab Objective
 
-本周使用 Docker 部署 ROS2 桌面环境，并通过浏览器访问。
+This lab runs ROS2 desktop tools from a Docker container and accesses them through a browser interface.
 
-## 2. 文件结构
+## Folder Structure
 
 <pre>
 Week08/
-|-- README.md              # 必须
-|-- screenshots/           # 推荐
+|-- README.md              # weekly lab report
+|-- screenshots/           # recommended evidence
 </pre>
 
-## 3. 实验环境
+## Environment
 
 - Docker
-- ROS2 Desktop VNC
-- Browser
+- ROS2 desktop image
+- Browser VNC
 
-## 4. 实验步骤
+## Workflow
 
-1. 检查 Docker。
-2. 拉取 ROS2 桌面镜像。
-3. 启动容器并映射端口。
+1. Start the ROS2 desktop container.
+2. Map the access port.
+3. Run GUI-based ROS2 tools.
 
-## 5. 运行命令
+## Commands
 
 <pre><code class="language-bash">
 docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
 </code></pre>
 
-## 6. 结果展示
+## Evidence
 
-浏览器访问 http://127.0.0.1:6080/ 后可进入 ROS2 桌面环境。
+The container desktop can be opened through the mapped browser interface.
 
-## 7. 学习总结
+## Reflection
 
-理解了 Docker 容器化环境对机器人开发的价值。
-
-## 8. 评分自查
-
-| 项目 | 状态 | 说明 |
-| --- | --- | --- |
-| 提交 week 文件夹 | 完成 | 已建立本周目录 |
-| README.md 存在 | 完成 | 已按统一模板编写 |
-| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
-| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
-| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
-| 有提交记录 | 完成 | 通过 Git 提交 |
-| 按时提交 | 待确认 | 以课程截止时间为准 |
+Docker reduces environment drift between machines.
 
 ---
 
-[返回总目录](../README.md)
+[Back to Lab Navigator](../README.md)

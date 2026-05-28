@@ -1,56 +1,44 @@
-# Week 15 - 期末课程记录
+# Week 15 - Final Course Notes
 
-## 1. 作业说明
+## Lab Objective
 
-本周用于整理期末课程说明和总结内容。
+This page keeps final-week notes in the same lab report style.
 
-## 2. 文件结构
+## Folder Structure
 
 <pre>
 Week15/
-|-- README.md              # 必须
-|-- README.md              # 必须
+|-- README.md              # weekly lab report
+|-- README.md              # lab report
 </pre>
 
-## 3. 实验环境
+## Environment
 
 - GitHub
 - Markdown
 - AI Robot review
 
-## 4. 实验步骤
+## Workflow
 
-1. 整理已有周目录。
-2. 保持统一模板。
-3. 补充期末内容。
+1. Review previous weeks.
+2. Keep the final page structured.
+3. Add final content when available.
 
-## 5. 运行命令
+## Commands
 
 <pre><code class="language-bash">
 git status
 git log --oneline
 </code></pre>
 
-## 6. 结果展示
+## Evidence
 
-Week15 已按统一作业模板整理完成。
+Final notes page is ready for additional course summary content.
 
-## 7. 学习总结
+## Reflection
 
-统一模板能让最终仓库更像完整课程作品集。
-
-## 8. 评分自查
-
-| 项目 | 状态 | 说明 |
-| --- | --- | --- |
-| 提交 week 文件夹 | 完成 | 已建立本周目录 |
-| README.md 存在 | 完成 | 已按统一模板编写 |
-| README 内容详细 | 完成 | 包含目标、环境、步骤、结果和总结 |
-| 包含图片 / 视频 | 视本周任务 | 有实验素材时已引用 |
-| 包含代码 | 视本周任务 | 有代码作业时提交源码 |
-| 有提交记录 | 完成 | 通过 Git 提交 |
-| 按时提交 | 待确认 | 以课程截止时间为准 |
+A consistent final page makes the repository feel complete.
 
 ---
 
-[返回总目录](../README.md)
+[Back to Lab Navigator](../README.md)
