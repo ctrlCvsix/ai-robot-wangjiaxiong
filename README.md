@@ -24,8 +24,6 @@ This repository is a lab navigator for AI Robot coursework. It is organized for 
 - Weekly pages use a consistent lab-report structure: objective, environment, workflow, commands, evidence, and reflection.
 - Image and video assets already committed in the repository are connected to the matching week pages.
 - Code-focused work such as Week13 highlights the Python source file and run command.
-- Remote-operation notes keep the course camera workflow accurate, including the original HTTPS access pattern used by the mobile browser experiment.
-- The root README acts as a navigation page rather than a copied grading rubric.
 
 ## Lab Route
 
