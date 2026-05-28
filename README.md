@@ -19,12 +19,6 @@
 
 This repository is a lab navigator for AI Robot coursework. It is organized for review, but it does not display a scoring table directly. Instead, the repository follows the expected review logic: every active week contains a README, experiment notes are expanded, media evidence is linked, and code-oriented weeks point to runnable commands or source files.
 
-## What Was Improved
-
-- Weekly pages use a consistent lab-report structure: objective, environment, workflow, commands, evidence, and reflection.
-- Image and video assets already committed in the repository are connected to the matching week pages.
-- Code-focused work such as Week13 highlights the Python source file and run command.
-
 ## Lab Route
 
 | Week | Lab Topic | Evidence | Link |
