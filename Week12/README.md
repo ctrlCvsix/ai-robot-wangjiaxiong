@@ -188,14 +188,3 @@ python3 aruco_generate_detect.py
 
 ![距离估算结果](img/distance_demo.png)
 
----
-
-## 七、English Summary
-
-In Week 12, I learned how to use OpenCV and ArUco markers for robot vision. I generated an ArUco marker with ID 6 using the `DICT_4X4_50` dictionary and implemented a detection pipeline to identify it in images. Using the pixel width of the detected marker and the pinhole camera model, I estimated the distance between the camera and the marker. This experiment demonstrated how robots can extract spatial information from visual fiducial markers — a fundamental technique in robot localization and navigation.
-
----
-
-## 八、한국어 요약
-
-12주차에는 OpenCV와 ArUco 마커를 사용하여 로봇 비전의 기본 원리를 학습하였다. `DICT_4X4_50` 사전을 사용하여 ID 6번 ArUco 마커를 생성하고, 이미지 내 마커를 검출하는 파이프라인을 구현하였다. 검출된 마커의 픽셀 너비와 핀홀 카메라 모델을 이용하여 카메라와 마커 사이의 거리를 추정하였다. 이 실험을 통해 로봇이 시각적 기준 마커로부터 공간 정보를 추출하는 기본 기술을 익힐 수 있었다.

@@ -155,14 +155,3 @@ PID 是机器人运动控制最基础也最重要的算法之一，广泛应用�
 
 ![正方形轨迹](img/square_result.png)
 
----
-
-## English Summary
-
-In Week 7, I reviewed the key concepts from the first half of the semester: ROS2 basic commands, Python node programming, robot kinematics, and PID control. I implemented a square trajectory controller that commands the turtlesim robot to move along a square path by publishing `cmd_vel` messages. The kinematics calculation demonstrated the relationship between wheel speeds and robot motion (v = 1.0 m/s, ω = 2.0 rad/s). This review helped consolidate my understanding of the fundamental ROS2 development workflow.
-
----
-
-## 한국어 요약
-
-7주차에는 학기 전반부의 핵심 개념인 ROS2 기본 명령어, Python 노드 프로그래밍, 로봇 운동학 및 PID 제어를 복습하였다. `cmd_vel` 메시지를 퍼블리시하여 turtlesim 로봇이 정사각형 경로를 따라 이동하도록 제어하는 프로그램을 구현하였으며, 바퀴 속도와 로봇 운동 간의 관계(v = 1.0 m/s, ω = 2.0 rad/s)를 운동학 계산을 통해 확인하였다. 이번 복습을 통해 ROS2 개발 워크플로우의 기초를 확립할 수 있었다.
