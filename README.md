@@ -28,10 +28,12 @@ This repository is a lab navigator for AI Robot coursework. It is organized for 
 | Week04 | PyBullet quadruped simulation | Image | [Open](./Week04) |
 | Week05 | Robotic arm IK and visual simulation | Video | [Open](./Week05) |
 | Week06 | KITTI data publishing and RViz2 visualization | Image | [Open](./Week06) |
+| Week07 | Midterm review and turtlesim square trajectory | Image | [Open](./Week07) |
 | Week08 | Docker ROS2 desktop container | README | [Open](./Week08) |
 | Week09 | ROS2 voice interaction | README | [Open](./Week09) |
 | Week10 | Docker and OpenCV experiment | Image | [Open](./Week10) |
 | Week11 | GitHub Pages deployment practice | Images | [Open](./Week11) |
+| Week12 | ArUco marker detection and distance estimation | Image | [Open](./Week12) |
 | Week13 | Quadruped Trot gait simulation | Python code | [Open](./Week13) |
 | Week14 | Remote camera and environment configuration | Images | [Open](./Week14) |
 | Week15 | Final course notes | README | [Open](./Week15) |
@@ -48,10 +50,12 @@ ai-robot-wangjiaxiong/
 |-- Week04/               # PyBullet quadruped simulation
 |-- Week05/               # Robotic arm IK and virtual camera
 |-- Week06/               # KITTI + RViz2 visualization
+|-- Week07/               # Midterm review, turtlesim practice
 |-- Week08/               # Docker ROS2 desktop
 |-- Week09/               # Voice interaction notes
 |-- Week10/               # Docker + OpenCV
 |-- Week11/               # GitHub Pages deployment
+|-- Week12/               # ArUco detection & distance estimation
 |-- Week13/               # trot.py gait simulation
 |-- Week14/               # remote camera workflow
 |-- Week15/               # final notes
