@@ -1,42 +1,42 @@
-# Week 17 - Extended Practice Slot
+# Week 17 — 扩展练习槽位
 
-## Lab Objective
+## 实验目标
 
-This page reserves a structured location for the next AI Robot assignment.
+为后续 AI Robot 作业预留结构化位置。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week17/
-|-- README.md              # weekly lab report
-|-- README.md              # lab report
+|-- README.md              # 周实验报告
+|-- README.md              # 实验报告
 </pre>
 
-## Environment
+## 实验环境
 
 - GitHub
 - Markdown
 
-## Workflow
+## 实验流程
 
-1. Keep the folder ready.
-2. Add task details when assigned.
+1. 保持文件夹就绪状态。
+2. 收到任务后补充详细内容。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 git status
 git add Week17/README.md
 </code></pre>
 
-## Evidence
+## 实验证据
 
-Week17 is prepared as an expandable lab page.
+Week17 已准备好作为可扩展的实验页面。
 
-## Reflection
+## 总结与反思
 
-A ready template keeps the archive consistent.
+预先准备好的模板能保持整个仓库归档的一致性。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

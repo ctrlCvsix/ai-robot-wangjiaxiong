@@ -1,30 +1,30 @@
-# Week 10 - Docker And OpenCV Experiment
+# Week 10 — Docker 与 OpenCV 实验
 
-## Lab Objective
+## 实验目标
 
-This lab verifies OpenCV in a Docker-based workflow and records the visual experiment output.
+在 Docker 工作流中验证 OpenCV 功能，并记录视觉实验输出。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week10/
-|-- README.md              # weekly lab report
-|-- opencv-result.png      # vision screenshot
+|-- README.md              # 周实验报告
+|-- opencv-result.png      # 视觉截图
 </pre>
 
-## Environment
+## 实验环境
 
 - Docker
 - Python
 - OpenCV
 
-## Workflow
+## 实验流程
 
-1. Check Docker containers and images.
-2. Run OpenCV verification.
-3. Save output evidence.
+1. 检查 Docker 容器与镜像。
+2. 运行 OpenCV 验证。
+3. 保存输出证据。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 python3 opencv_test.py
@@ -32,14 +32,14 @@ docker ps
 docker images
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="opencv-result.png" width="800" alt="OpenCV experiment evidence">
+<img src="opencv-result.png" width="800" alt="OpenCV 实验证据">
 
-## Reflection
+## 总结与反思
 
-OpenCV provides the computer-vision foundation for later camera work.
+OpenCV 为后续相机相关实验提供了计算机视觉的基础能力。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

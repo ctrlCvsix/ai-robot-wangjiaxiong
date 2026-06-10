@@ -1,44 +1,44 @@
-# Week 09 - ROS2 Voice Interaction
+# Week 09 — ROS2 语音交互
 
-## Lab Objective
+## 实验目标
 
-This lab records the topic-level idea behind voice interaction in ROS2.
+记录 ROS2 中语音交互的话题通信思路与消息管道设计。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week09/
-|-- README.md              # weekly lab report
-|-- README.md              # lab report
+|-- README.md              # 周实验报告
+|-- README.md              # 实验报告
 </pre>
 
-## Environment
+## 实验环境
 
 - ROS2
-- Speech / TTS concept
-- Terminal
+- 语音 / TTS 概念
+- 终端
 
-## Workflow
+## 实验流程
 
-1. List ROS2 topics.
-2. Inspect speech-related messages.
-3. Connect voice flow with robot control.
+1. 列出 ROS2 话题。
+2. 检查语音相关消息。
+3. 将语音流程与机器人控制相连接。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 ros2 topic list
 ros2 topic echo /tts/speak
 </code></pre>
 
-## Evidence
+## 实验证据
 
-Voice interaction is documented as a ROS2 message pipeline.
+语音交互以 ROS2 消息管道的形式记录下来。
 
-## Reflection
+## 总结与反思
 
-Voice systems can be reasoned about as nodes, topics, and messages.
+语音系统可以抽象为节点、话题与消息的组合来进行推理与设计。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

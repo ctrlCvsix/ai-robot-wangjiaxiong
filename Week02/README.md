@@ -1,45 +1,45 @@
-# Week 02 - Ubuntu And ROS2 Environment Setup
+# Week 02 — Ubuntu 与 ROS2 环境搭建
 
-## Lab Objective
+## 实验目标
 
-This lab builds the base Ubuntu and ROS2 environment, then verifies the installation with turtlesim.
+搭建 Ubuntu 与 ROS2 基础环境，并通过 turtlesim 验证安装是否成功。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week02/
-|-- README.md              # weekly lab report
-|-- images/                # setup screenshot
+|-- README.md              # 周实验报告
+|-- images/                # 环境搭建截图
 </pre>
 
-## Environment
+## 实验环境
 
 - Ubuntu 24.04 LTS
 - ROS2 Jazzy / Humble
-- Terminal
+- 终端
 - VS Code
 
-## Workflow
+## 实验流程
 
-1. Prepare Ubuntu and ROS2 packages.
-2. Source the ROS2 setup script.
-3. Launch turtlesim as the first environment check.
+1. 准备 Ubuntu 与 ROS2 软件包。
+2. 加载 ROS2 环境配置脚本。
+3. 启动 turtlesim 验证环境是否就绪。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 source /opt/ros/jazzy/setup.bash
 ros2 run turtlesim turtlesim_node
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="images/xiaowugui.png" width="800" alt="ROS2 turtlesim setup evidence">
+<img src="images/xiaowugui.png" width="800" alt="ROS2 turtlesim 环境搭建证据">
 
-## Reflection
+## 总结与反思
 
-A stable ROS2 environment is the first requirement for every later robot experiment.
+稳定的 ROS2 环境是后续所有机器人实验的首要前提。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

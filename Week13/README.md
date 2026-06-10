@@ -1,45 +1,45 @@
-# Week 13 - Quadruped Trot Gait Simulation
+# Week 13 — 四足 Trot 步态仿真
 
-## Lab Objective
+## 实验目标
 
-This lab implements a simple Trot gait controller for a Laikago model in PyBullet.
+为 PyBullet 中的 Laikago 模型实现一个简单的 Trot 步态控制器。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week13/
-|-- README.md              # weekly lab report
-|-- trot.py                # Python code
+|-- README.md              # 周实验报告
+|-- trot.py                # Python 代码
 </pre>
 
-## Environment
+## 实验环境
 
 - Python
 - PyBullet
 - NumPy
 - Laikago URDF
 
-## Workflow
+## 实验流程
 
-1. Load the Laikago robot.
-2. Create the gait controller.
-3. Run the simulation loop.
+1. 加载 Laikago 机器人模型。
+2. 创建步态控制器。
+3. 运行仿真循环。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 pip install pybullet numpy
 python3 trot.py
 </code></pre>
 
-## Evidence
+## 实验证据
 
-Source file: trot.py
+源代码文件：trot.py
 
-## Reflection
+## 总结与反思
 
-The gait controller shows how phase differences create coordinated quadruped movement.
+步态控制器展示了如何通过相位差实现四足机器人的协调运动。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

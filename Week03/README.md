@@ -1,43 +1,43 @@
-# Week 03 - ROS2 Topic Communication
+# Week 03 — ROS2 话题通信
 
-## Lab Objective
+## 实验目标
 
-This lab controls turtlesim through ROS2 topic publishing and demonstrates how Twist messages affect movement.
+通过 ROS2 话题发布控制 turtlesim，展示 Twist 消息如何影响小乌龟的运动。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week03/
-|-- README.md              # weekly lab report
-|-- images/                # movement screenshot
+|-- README.md              # 周实验报告
+|-- images/                # 运动截图
 </pre>
 
-## Environment
+## 实验环境
 
 - ROS2
 - turtlesim
 - geometry_msgs/msg/Twist
 
-## Workflow
+## 实验流程
 
-1. Start turtlesim.
-2. Publish velocity commands.
-3. Record the movement result.
+1. 启动 turtlesim。
+2. 发布速度指令。
+3. 记录运动结果。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 1.8}}"
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="images/dawugui.png" width="800" alt="ROS2 topic control evidence">
+<img src="images/dawugui.png" width="800" alt="ROS2 话题控制证据">
 
-## Reflection
+## 总结与反思
 
-Topic publishing is a simple but powerful way to test robot command flow.
+话题发布是测试机器人指令流的一种简单而强大的方式。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

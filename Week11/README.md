@@ -1,31 +1,31 @@
-# Week 11 - GitHub Pages Deployment Practice
+# Week 11 — GitHub Pages 部署实践
 
-## Lab Objective
+## 实验目标
 
-This lab records static deployment practice and browser verification.
+记录静态页面部署实践与浏览器验证过程。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week11/
-|-- README.md              # weekly lab report
-|-- 514.png                # screenshot
-|-- 514_2.png              # screenshot
+|-- README.md              # 周实验报告
+|-- 514.png                # 截图
+|-- 514_2.png              # 截图
 </pre>
 
-## Environment
+## 实验环境
 
 - GitHub Pages
 - Git
-- Browser
+- 浏览器
 
-## Workflow
+## 实验流程
 
-1. Prepare deployment files.
-2. Commit and push changes.
-3. Verify the browser result.
+1. 准备部署文件。
+2. 提交并推送更改。
+3. 在浏览器中验证结果。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 git add .
@@ -33,16 +33,16 @@ git commit -m week11-update
 git push origin main
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="514.png" width="800" alt="deployment evidence">
+<img src="514.png" width="800" alt="部署证据">
 
-<img src="514_2.png" width="800" alt="deployment verification evidence">
+<img src="514_2.png" width="800" alt="部署验证证据">
 
-## Reflection
+## 总结与反思
 
-Deployment practice turns local course work into a shareable project page.
+部署实践将本地课程作业转化为可分享的项目页面。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

@@ -1,45 +1,45 @@
-# Week 04 - PyBullet Quadruped Simulation
+# Week 04 — PyBullet 四足机器人仿真
 
-## Lab Objective
+## 实验目标
 
-This lab uses PyBullet to load and inspect a quadruped robot model in a physics simulation environment.
+使用 PyBullet 在物理仿真环境中加载并观察四足机器人模型。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week04/
-|-- README.md              # weekly lab report
-|-- images/                # simulation screenshot
-|-- *.py                   # Python work when available
+|-- README.md              # 周实验报告
+|-- images/                # 仿真截图
+|-- *.py                   # Python 代码（如有）
 </pre>
 
-## Environment
+## 实验环境
 
 - Python
 - PyBullet
-- Terminal
+- 终端
 
-## Workflow
+## 实验流程
 
-1. Install PyBullet.
-2. Create a simulation world.
-3. Load and inspect the robot model.
+1. 安装 PyBullet。
+2. 创建仿真世界。
+3. 加载并观察机器人模型。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 pip install pybullet
 python3 simulation.py
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="images/dog.png" width="800" alt="PyBullet quadruped evidence">
+<img src="images/dog.png" width="800" alt="PyBullet 四足机器人证据">
 
-## Reflection
+## 总结与反思
 
-Simulation helps test robot ideas before using physical hardware.
+仿真环境让我们可以在使用真实硬件之前安全地测试机器人方案。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

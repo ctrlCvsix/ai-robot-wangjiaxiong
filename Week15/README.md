@@ -1,44 +1,44 @@
-# Week 15 - Final Course Notes
+# Week 15 — 期末课程笔记
 
-## Lab Objective
+## 实验目标
 
-This page keeps final-week notes in the same lab report style.
+以统一的实验报告格式保存期末笔记。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week15/
-|-- README.md              # weekly lab report
-|-- README.md              # lab report
+|-- README.md              # 周实验报告
+|-- README.md              # 实验报告
 </pre>
 
-## Environment
+## 实验环境
 
 - GitHub
 - Markdown
-- AI Robot review
+- AI Robot 复习
 
-## Workflow
+## 实验流程
 
-1. Review previous weeks.
-2. Keep the final page structured.
-3. Add final content when available.
+1. 回顾前期实验内容。
+2. 保持期末页面结构清晰。
+3. 补充期末总结内容。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 git status
 git log --oneline
 </code></pre>
 
-## Evidence
+## 实验证据
 
-Final notes page is ready for additional course summary content.
+期末笔记页面已就绪，可继续添加课程总结内容。
 
-## Reflection
+## 总结与反思
 
-A consistent final page makes the repository feel complete.
+保持一致的期末页面能让整个仓库显得更加完整。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

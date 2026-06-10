@@ -1,43 +1,43 @@
-# Week 08 - Docker ROS2 Desktop Container
+# Week 08 — Docker ROS2 桌面容器
 
-## Lab Objective
+## 实验目标
 
-This lab runs ROS2 desktop tools from a Docker container and accesses them through a browser interface.
+使用 Docker 容器运行 ROS2 桌面工具，并通过浏览器界面进行访问。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week08/
-|-- README.md              # weekly lab report
-|-- screenshots/           # recommended evidence
+|-- README.md              # 周实验报告
+|-- screenshots/           # 推荐证据
 </pre>
 
-## Environment
+## 实验环境
 
 - Docker
-- ROS2 desktop image
-- Browser VNC
+- ROS2 桌面镜像
+- 浏览器 VNC
 
-## Workflow
+## 实验流程
 
-1. Start the ROS2 desktop container.
-2. Map the access port.
-3. Run GUI-based ROS2 tools.
+1. 启动 ROS2 桌面容器。
+2. 映射访问端口。
+3. 运行图形化 ROS2 工具。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
 </code></pre>
 
-## Evidence
+## 实验证据
 
-The container desktop can be opened through the mapped browser interface.
+容器桌面可通过映射后的浏览器端口打开访问。
 
-## Reflection
+## 总结与反思
 
-Docker reduces environment drift between machines.
+Docker 有效减少了不同机器之间环境差异导致的问题。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)

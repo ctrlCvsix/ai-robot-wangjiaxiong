@@ -1,45 +1,45 @@
-# Week 06 - KITTI Publishing And RViz2 Visualization
+# Week 06 — KITTI 数据发布与 RViz2 可视化
 
-## Lab Objective
+## 实验目标
 
-This lab publishes KITTI-style data and checks point cloud / image visualization in ROS2 tools.
+发布 KITTI 格式数据，在 ROS2 工具中查看点云与图像的可视化效果。
 
-## Folder Structure
+## 目录结构
 
 <pre>
 Week06/
-|-- README.md              # weekly lab report
-|-- images/                # visualization screenshot
+|-- README.md              # 周实验报告
+|-- images/                # 可视化截图
 </pre>
 
-## Environment
+## 实验环境
 
 - ROS2
-- KITTI dataset
+- KITTI 数据集
 - RViz2
 - RQT
 
-## Workflow
+## 实验流程
 
-1. Prepare KITTI data.
-2. Run the publisher node.
-3. View data in RViz2 and RQT.
+1. 准备 KITTI 数据。
+2. 运行发布节点。
+3. 在 RViz2 与 RQT 中查看数据。
 
-## Commands
+## 命令
 
 <pre><code class="language-bash">
 ros2 run ros2_kitti_publishers publisher_node
 rviz2
 </code></pre>
 
-## Evidence
+## 实验证据
 
-<img src="images/zidongjiashi.png" width="800" alt="KITTI visualization evidence">
+<img src="images/zidongjiashi.png" width="800" alt="KITTI 可视化证据">
 
-## Reflection
+## 总结与反思
 
-Visualization tools make sensor data easier to verify and debug.
+可视化工具使传感器数据的验证与调试变得更加直观高效。
 
 ---
 
-[Back to Lab Navigator](../README.md)
+[返回实验导航](../README.md)
