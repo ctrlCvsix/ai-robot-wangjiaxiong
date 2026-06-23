@@ -81,18 +81,6 @@ ros2 topic hz /kitti/velo/pointcloud
 
 *KITTI 数据集在 RViz2 中成功渲染，点云和图像同步显示*
 
-### 避障流程
-
-<img src="img/avoidance_flow.png" width="800" alt="避障流程图">
-
-*基于传感器数据的避障决策流程*
-
-### 避障运行
-
-<img src="img/avoidance_run.png" width="800" alt="避障运行">
-
-*避障逻辑在仿真环境中运行验证*
-
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |
