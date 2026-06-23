@@ -80,10 +80,6 @@ ros2 run turtlesim turtlesim_node
 
 *在 Docker 容器中成功运行 turtlesim，验证 ROS2 环境正常*
 
-### noVNC 浏览器访问
-
-<img src="img/vnc_page.png" width="800" alt="noVNC 浏览器页面">
-
 *通过浏览器直接访问容器桌面，无需安装任何客户端*
 
 ## 遇到的问题与解决
