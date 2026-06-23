@@ -10,11 +10,20 @@
 Week13/
 ├── README.md                   # 本报告
 ├── trot.py                     # Trot 步态控制器
+├── quadruped_walk.py           # Walk 步态控制
 ├── quadruped_project_demo.py   # 项目演示入口
-└── img/                        # 实验截图
-    ├── simulation_run.png      # 仿真过程
-    ├── quadruped_concept.png   # 四足机器人概念图
-    └── project_checklist.png   # 项目检查清单
+├── img/                        # 实验截图
+│   ├── simulation_run.png      # 仿真过程
+│   ├── quadruped_concept.png   # 四足机器人概念图
+│   └── project_checklist.png   # 项目检查清单
+├── demos/                      # 分步演示代码
+│   ├── 01_pybullet_box.py      # PyBullet 入门
+│   ├── 02_load_laikago.py      # 加载 Laikago 模型
+│   ├── 03_sine_gait.py         # 正弦步态控制
+│   └── 04_trot_gait.py         # Trot 步态演示
+└── scripts/                    # 可视化生成脚本
+    ├── generate_gait_gifs.py
+    └── generate_gait_diagrams.py
 ```
 
 ## 实验环境
@@ -34,24 +43,34 @@ Week13/
 pip install pybullet numpy
 ```
 
-### 2. 加载四足机器人模型
+### 2. PyBullet 入门
 
-加载 Laikago 四足机器人 URDF 模型到 PyBullet 仿真环境：
-
-```python
-import pybullet as p
-p.connect(p.GUI)
-p.setGravity(0, 0, -9.8)
-robot_id = p.loadURDF("laikago/laikago.urdf", [0, 0, 0.5])
-```
-
-### 3. 实现 Trot 步态控制器
-
-Trot 步态的核心是对角腿配对（左前+右后 为一组，右前+左后 为另一组），两组交替支撑，相位差 180°。通过正弦函数生成关节角度，实现协调运动。
-
-### 4. 运行仿真
+从方块自由落体开始，熟悉 PyBullet 仿真循环：
 
 ```bash
+python3 demos/01_pybullet_box.py
+```
+
+### 3. 加载四足机器人模型
+
+```bash
+python3 demos/02_load_laikago.py
+```
+
+### 4. 正弦步态实验
+
+用正弦函数控制关节角度，观察对角腿相位差：
+
+```bash
+python3 demos/03_sine_gait.py
+```
+
+### 5. Trot 步态实现
+
+Trot 步态的核心是对角腿配对（左前+右后 为一组，右前+左后 为另一组），相位差 180°：
+
+```bash
+python3 demos/04_trot_gait.py
 python3 trot.py
 ```
 
@@ -63,6 +82,9 @@ pip install pybullet numpy
 
 # 运行 Trot 步态
 python3 trot.py
+
+# 运行 Walk 步态
+python3 quadruped_walk.py
 ```
 
 ## 步态原理
