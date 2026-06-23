@@ -185,4 +185,8 @@ PID 是机器人运动控制最基础也最重要的算法之一，广泛应用�
 
 ---
 
+<img src="img/node_list_copy.png" width="800" alt="补充截图：ROS2 节点状态">
+
+*补充截图：ROS2 节点状态*
+
 [返回实验导航](../README.md)

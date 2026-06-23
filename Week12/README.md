@@ -132,4 +132,12 @@ distance_m = real_marker_size_m * focal_length_px / pixel_width  # 0.05 * 700 / 
 
 ---
 
+<img src="img/aruco_detect_copy.png" width="800" alt="补充截图：ArUco 标记检测">
+
+*补充截图：ArUco 标记检测*
+
+<img src="img/distance_demo_copy.png" width="800" alt="补充截图：距离估算验证">
+
+*补充截图：距离估算验证*
+
 [返回实验导航](../README.md)

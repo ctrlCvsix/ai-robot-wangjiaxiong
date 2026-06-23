@@ -104,4 +104,8 @@ KITTI 是自动驾驶领域的标准数据集。通过 ROS2 发布 KITTI 数据�
 
 ---
 
+<img src="images/zidongjiashi_copy.png" width="800" alt="补充截图：传感器数据处理">
+
+*补充截图：传感器数据处理*
+
 [返回实验导航](../README.md)

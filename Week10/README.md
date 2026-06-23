@@ -114,4 +114,8 @@ Docker + OpenCV 的组合是机器人视觉开发的标准范式：
 
 ---
 
+<img src="img/docker_command_copy.png" width="800" alt="补充截图：Docker 命令执行">
+
+*补充截图：Docker 命令执行*
+
 [返回实验导航](../README.md)

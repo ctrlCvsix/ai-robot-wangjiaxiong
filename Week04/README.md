@@ -110,4 +110,8 @@ python3 simulation.py
 
 ---
 
+<img src="images/dog_copy.png" width="800" alt="补充截图：运动学仿真运行">
+
+*补充截图：运动学仿真运行*
+
 [返回实验导航](../README.md)
