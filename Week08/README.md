@@ -80,6 +80,14 @@ ros2 run turtlesim turtlesim_node
 
 *在 Docker 容器中成功运行 turtlesim，验证 ROS2 环境正常*
 
+<img src="img/docker_turtlesim.png" width="800" alt="容器内 Turtlesim 运行">
+
+*在 Docker 容器中成功运行 turtlesim，验证 ROS2 环境正常*
+
+<img src="img/docker_turtlesim.png" width="800" alt="容器内 Turtlesim 运行">
+
+*在 Docker 容器中成功运行 turtlesim，验证 ROS2 环境正常*
+
 *通过浏览器直接访问容器桌面，无需安装任何客户端*
 
 ## 遇到的问题与解决

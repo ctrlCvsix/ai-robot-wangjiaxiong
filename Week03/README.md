@@ -92,6 +92,18 @@ Publisher (控制程序)  →  /turtle1/cmd_vel (Twist)  →  Subscriber (turtle
 
 *通过命令行发布 Twist 消息控制 turtlesim 运动*
 
+<img src="images/dawugui.png" width="800" alt="大乌龟控制截图">
+
+*通过命令行发布 Twist 消息控制 turtlesim 运动*
+
+<img src="images/dawugui.png" width="800" alt="大乌龟控制截图">
+
+*通过命令行发布 Twist 消息控制 turtlesim 运动*
+
+<img src="images/dawugui.png" width="800" alt="大乌龟控制截图">
+
+*通过命令行发布 Twist 消息控制 turtlesim 运动*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |

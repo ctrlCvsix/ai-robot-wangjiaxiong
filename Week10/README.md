@@ -88,6 +88,10 @@ docker run -it --rm -v $(pwd):/workspace python:3.10 python3 opencv_test.py
 
 *视觉实验最终输出结果*
 
+<img src="opencv-result.png" width="800" alt="视觉实验输出">
+
+*视觉实验最终输出结果*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |

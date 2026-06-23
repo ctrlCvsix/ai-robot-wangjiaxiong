@@ -107,6 +107,14 @@ distance_m = real_marker_size_m * focal_length_px / pixel_width  # 0.05 * 700 / 
 
 *距离估算数值标注在检测框上方*
 
+<img src="img/distance_demo.png" width="800" alt="距离估算标注">
+
+*距离估算数值标注在检测框上方*
+
+<img src="img/distance_demo.png" width="800" alt="距离估算标注">
+
+*距离估算数值标注在检测框上方*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |

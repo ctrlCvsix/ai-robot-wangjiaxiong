@@ -87,6 +87,18 @@ python3 simulation.py
 
 *Laikago 四足机器人模型在 PyBullet 仿真环境中成功加载*
 
+<img src="images/dog.png" width="800" alt="PyBullet Laikago 仿真">
+
+*Laikago 四足机器人模型在 PyBullet 仿真环境中成功加载*
+
+<img src="images/dog.png" width="800" alt="PyBullet Laikago 仿真">
+
+*Laikago 四足机器人模型在 PyBullet 仿真环境中成功加载*
+
+<img src="images/dog.png" width="800" alt="PyBullet Laikago 仿真">
+
+*Laikago 四足机器人模型在 PyBullet 仿真环境中成功加载*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |

@@ -124,6 +124,10 @@ python3 quadruped_walk.py
 
 *项目进度与检查清单*
 
+<img src="img/project_checklist.png" width="800" alt="项目检查清单">
+
+*项目进度与检查清单*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |

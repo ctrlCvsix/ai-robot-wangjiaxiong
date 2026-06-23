@@ -81,6 +81,18 @@ ros2 topic hz /kitti/velo/pointcloud
 
 *KITTI 数据集在 RViz2 中成功渲染，点云和图像同步显示*
 
+<img src="images/zidongjiashi.png" width="800" alt="KITTI RViz2 可视化">
+
+*KITTI 数据集在 RViz2 中成功渲染，点云和图像同步显示*
+
+<img src="images/zidongjiashi.png" width="800" alt="KITTI RViz2 可视化">
+
+*KITTI 数据集在 RViz2 中成功渲染，点云和图像同步显示*
+
+<img src="images/zidongjiashi.png" width="800" alt="KITTI RViz2 可视化">
+
+*KITTI 数据集在 RViz2 中成功渲染，点云和图像同步显示*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |
