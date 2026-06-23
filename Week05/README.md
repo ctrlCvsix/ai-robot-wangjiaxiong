@@ -80,6 +80,26 @@ joint_positions = p.calculateInverseKinematics(
 
 *机械臂从初始姿态运动到 IK 求解的目标位姿*
 
+<img src="img/week5_1.png" width="800" alt="机械臂仿真截图1">
+
+*机械臂仿真运行截图*
+
+<img src="img/week5_2.png" width="800" alt="机械臂仿真截图2">
+
+*机械臂仿真运行截图*
+
+<img src="img/week5_3.png" width="800" alt="机械臂仿真截图3">
+
+*机械臂仿真运行截图*
+
+<img src="img/week5_4.png" width="800" alt="机械臂仿真截图4">
+
+*机械臂仿真运行截图*
+
+<img src="img/week5_5.png" width="800" alt="机械臂仿真截图5">
+
+*机械臂仿真运行截图*
+
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |
