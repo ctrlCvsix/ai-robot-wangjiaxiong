@@ -119,10 +119,4 @@ Publisher (控制程序)  →  /turtle1/cmd_vel (Twist)  →  Subscriber (turtle
 
 *补充截图：Python 控制节点运行*
 
-<img src="img/python_run.png" width="800" alt="截图">
-
-
-<img src="img/rectangle.png" width="800" alt="截图">
-
-
 [返回实验导航](../README.md)

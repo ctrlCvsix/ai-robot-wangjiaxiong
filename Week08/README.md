@@ -112,7 +112,4 @@ Docker 容器化是机器人开发从单机走向分布式的重要基础：
 
 *补充截图：Docker 容器管理*
 
-<img src="img/vnc_page.png" width="800" alt="截图">
-
-
 [返回实验导航](../README.md)
