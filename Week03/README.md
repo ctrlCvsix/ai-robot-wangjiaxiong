@@ -88,19 +88,19 @@ Publisher (控制程序)  →  /turtle1/cmd_vel (Twist)  →  Subscriber (turtle
 
 ### 命令行控制
 
-<img src="dawugui.png" width="800" alt="大乌龟控制截图">
+<img src="images/dawugui.png" width="800" alt="大乌龟控制截图">
 
 *通过命令行发布 Twist 消息控制 turtlesim 运动*
 
 ### Python 程序运行
 
-<img src="python_run.png" width="800" alt="Python 程序运行截图">
+<img src="img/python_run.png" width="800" alt="Python 程序运行截图">
 
 *Python 控制节点成功运行，自动发布速度指令*
 
 ### 长方形轨迹
 
-<img src="rectangle.png" width="800" alt="长方形轨迹">
+<img src="img/rectangle.png" width="800" alt="长方形轨迹">
 
 *通过控制线速度和角速度的时序组合，乌龟画出长方形轨迹*
 

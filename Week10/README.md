@@ -74,13 +74,13 @@ docker run -it --rm -v $(pwd):/workspace python:3.10 python3 opencv_test.py
 
 ### Docker 命令执行
 
-<img src="docker_command.png" width="800" alt="Docker 命令执行">
+<img src="img/docker_command.png" width="800" alt="Docker 命令执行">
 
 *容器状态检查，确认环境正常运行*
 
 ### OpenCV 处理结果
 
-<img src="opencv_result.png" width="800" alt="OpenCV 处理结果">
+<img src="img/opencv_result.png" width="800" alt="OpenCV 处理结果">
 
 *OpenCV 图像处理成功输出*
 

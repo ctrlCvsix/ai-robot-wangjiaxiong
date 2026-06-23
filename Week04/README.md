@@ -83,19 +83,19 @@ python3 simulation.py
 
 ### 四足机器人仿真
 
-<img src="dog.png" width="800" alt="PyBullet Laikago 仿真">
+<img src="images/dog.png" width="800" alt="PyBullet Laikago 仿真">
 
 *Laikago 四足机器人模型在 PyBullet 仿真环境中成功加载*
 
 ### 运动学运行
 
-<img src="kinematics_run.png" width="800" alt="运动学运行">
+<img src="img/kinematics_run.png" width="800" alt="运动学运行">
 
 *运动学参数在仿真中验证，机器人关节角度正常*
 
 ### 位姿数据监听
 
-<img src="pose_echo.png" width="800" alt="位姿话题监听">
+<img src="img/pose_echo.png" width="800" alt="位姿话题监听">
 
 *ROS2 里程计话题实时输出机器人位姿数据*
 

@@ -97,31 +97,31 @@ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angu
 
 ### Turtlesim 启动
 
-<img src="xiaowugui.png" width="800" alt="turtlesim 启动成功">
+<img src="images/xiaowugui.png" width="800" alt="turtlesim 启动成功">
 
 *ROS2 turtlesim 启动成功，小乌龟出现在窗口中央*
 
 ### ROS2 节点列表
 
-<img src="node_list.png" width="800" alt="ROS2 节点列表">
+<img src="img/node_list.png" width="800" alt="ROS2 节点列表">
 
 *`ros2 node list` 输出 turtlesim 相关节点*
 
 ### ROS2 话题列表
 
-<img src="topic_list.png" width="800" alt="ROS2 话题列表">
+<img src="img/topic_list.png" width="800" alt="ROS2 话题列表">
 
 *`ros2 topic list` 显示 /turtle1/cmd_vel 等话题正常注册*
 
 ### 乌龟画圆
 
-<img src="circle.png" width="800" alt="乌龟画圆轨迹">
+<img src="img/circle.png" width="800" alt="乌龟画圆轨迹">
 
 *通过发布 Twist 消息让乌龟画出圆形轨迹，验证环境完全可用*
 
 ### 完整环境截图
 
-<img src="turtlesim_start.png" width="800" alt="turtlesim 完整环境">
+<img src="img/turtlesim_start.png" width="800" alt="turtlesim 完整环境">
 
 *多终端协作验证 ROS2 运行状态*
 

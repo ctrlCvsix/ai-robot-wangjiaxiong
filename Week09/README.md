@@ -80,7 +80,7 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 
 ### 数学基础运行
 
-<img src="math_run.png" width="800" alt="数学基础运行截图">
+<img src="img/math_run.png" width="800" alt="数学基础运行截图">
 
 ### ROS2 语音话题
 
@@ -92,7 +92,7 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 
 ### 路径规划结果
 
-<img src="path_result.png" width="800" alt="路径规划结果">
+<img src="img/path_result.png" width="800" alt="路径规划结果">
 
 *路径规划算法在仿真环境中生成的最优路径*
 

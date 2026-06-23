@@ -80,13 +80,13 @@ docker run --rm -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 
 ### Pages 配置准备
 
-<img src="github_pages_prepare.png" width="800" alt="Pages 配置准备">
+<img src="img/github_pages_prepare.png" width="800" alt="Pages 配置准备">
 
 *仓库 Settings 中的 Pages 配置界面*
 
 ### Docker 环境准备
 
-<img src="docker_advanced.png" width="800" alt="Docker 高级操作">
+<img src="img/docker_advanced.png" width="800" alt="Docker 高级操作">
 
 *Docker 容器中本地预览，验证部署效果*
 
