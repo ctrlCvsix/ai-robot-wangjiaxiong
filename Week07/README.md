@@ -154,6 +154,9 @@ PID 是机器人运动控制最基础也最重要的算法之一，广泛应用�
 ### 小乌龟正方形轨迹
 
 ![正方形轨迹](img/square_result.png)
+n![正方形轨迹](img&square_result.png)
+n![正方形轨迹](img&square_result.png)
+n![正方形轨迹](img&square_result.png)
 
 *程序运行后小乌龟在 turtlesim 中走出正方形轨迹*
 

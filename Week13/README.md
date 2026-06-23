@@ -121,6 +121,7 @@ python3 quadruped_walk.py
 ### 项目检查清单
 
 <img src="img/project_checklist.png" width="800" alt="项目检查清单">
+n<img src="img&simulation_run.png" width="800" alt="仿真过程截图">
 
 *项目进度与检查清单*
 

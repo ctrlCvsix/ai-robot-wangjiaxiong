@@ -104,6 +104,8 @@ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angu
 ### 完整环境截图
 
 <img src="img/turtlesim_start.png" width="800" alt="turtlesim 完整环境">
+n<img src="images&xiaowugui.png" width="800" alt="turtlesim 启动成功">
+n<img src="images&xiaowugui.png" width="800" alt="turtlesim 启动成功">
 
 *多终端协作验证 ROS2 运行状态*
 

@@ -104,6 +104,8 @@ distance_m = real_marker_size_m * focal_length_px / pixel_width  # 0.05 * 700 / 
 *程序生成的 ArUco ID 6 标记识别结果*
 
 <img src="img/distance_demo.png" width="800" alt="距离估算标注">
+n<img src="img&aruco_detect.png" width="800" alt="ArUco ID 6 识别结果">
+n<img src="img&aruco_detect.png" width="800" alt="ArUco ID 6 识别结果">
 
 *距离估算数值标注在检测框上方*
 

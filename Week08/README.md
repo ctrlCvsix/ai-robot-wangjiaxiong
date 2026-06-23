@@ -77,6 +77,8 @@ ros2 run turtlesim turtlesim_node
 ### 容器内 Turtlesim
 
 <img src="img/docker_turtlesim.png" width="800" alt="容器内 Turtlesim 运行">
+n<img src="img&docker_desktop.png" width="800" alt="Docker 桌面启动">
+n<img src="img&docker_desktop.png" width="800" alt="Docker 桌面启动">
 
 *在 Docker 容器中成功运行 turtlesim，验证 ROS2 环境正常*
 
