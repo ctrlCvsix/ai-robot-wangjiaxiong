@@ -114,4 +114,10 @@ python3 simulation.py
 
 *补充截图：运动学仿真运行*
 
+<img src="img/kinematics_run.png" width="800" alt="截图">
+
+
+<img src="img/pose_echo.png" width="800" alt="截图">
+
+
 [返回实验导航](../README.md)

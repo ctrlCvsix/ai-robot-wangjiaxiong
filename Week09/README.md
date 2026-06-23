@@ -112,4 +112,10 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 
 *补充截图：路径规划算法*
 
+<img src="img/math_run.png" width="800" alt="截图">
+
+
+<img src="img/path_result.png" width="800" alt="截图">
+
+
 [返回实验导航](../README.md)

@@ -146,4 +146,10 @@ Week14/
 
 *补充截图：系统部署验证*
 
+<img src="1.jpeg" width="800" alt="截图">
+
+
+<img src="11.jpeg" width="800" alt="截图">
+
+
 [返回实验导航](../README.md)

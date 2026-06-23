@@ -99,6 +99,17 @@ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angu
 
 <img src="images/xiaowugui.png" width="800" alt="turtlesim 启动成功">
 
+<img src="img/node_list.png" width="800" alt="ROS2 节点列表">
+
+*`ros2 node list` 输出，确认 turtlesim 节点正常运行*
+
+<img src="img/topic_list.png" width="800" alt="ROS2 话题列表">
+
+*`ros2 topic list` 输出，确认话题已注册*
+
+<img src="img/circle.png" width="800" alt="乌龟画圆轨迹">
+
+*乌龟画出圆形轨迹，验证环境完全可用*
 *ROS2 turtlesim 启动成功，小乌龟出现在窗口中央*
 
 ### 完整环境截图
