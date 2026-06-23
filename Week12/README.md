@@ -1,190 +1,149 @@
-# Week 12：手机摄像头、ArUco 识别与距离估算实验
+# Week 12 — 手机摄像头、ArUco 识别与距离估算
 
-## 一、实验基本信息
+## 实验目标
 
-- **课程**：AI Robotics
-- **主题**：手机摄像头输入、ArUco 标记识别、距离估算
-- **实验工具**：Python 3、OpenCV、ArUco
-
----
-
-## 二、实验目标
-
-本周实验主要围绕机器人视觉展开，目标是理解机器人如何通过摄像头识别视觉标记（ArUco），并进一步估算目标与摄像头之间的距离。
+通过 OpenCV 和 ArUco 库，完成视觉标记的生成、识别与距离估算，理解机器人视觉定位的基本原理。
 
 本次实验完成内容：
 
-1. 使用 OpenCV 生成 ArUco 标记
-2. 使用 `DICT_4X4_50` 字典识别 ArUco
-3. 成功识别课堂要求的 ArUco ID 6
-4. 根据标记像素宽度估算距离
-5. 保存识别结果图和距离估算图
+1. 生成自定义 ArUco 标记（DICT_4X4_50，ID 6）
+2. 识别图像中的 ArUco 标记并标注 ID
+3. 根据像素宽度估算标记与摄像头的实际距离
+4. 保存识别结果和距离估算截图
 
----
+## 实验环境
 
-## 三、实验原理
+| 组件 | 说明 |
+|------|------|
+| 编程语言 | Python 3 |
+| 视觉库 | OpenCV (cv2.aruco) |
+| 标记字典 | DICT_4X4_50 |
+| 标记 ID | 6 |
+| 标记尺寸 | 5 cm × 5 cm |
 
-### 1. ArUco 标记
+## 实验原理
 
-ArUco 是一种常用于机器人视觉定位的黑白方形标记。每个标记都有唯一 ID，机器人可以通过摄像头识别 ID 和角点位置，用于定位、导航和增强现实等场景。
+### ArUco 标记
 
-在本实验中，我使用的标记参数：
+ArUco 是一种黑白方形基准标记，广泛应用于机器人视觉定位。每个标记有唯一 ID，摄像头通过检测角点和解码内部编码来识别。
 
-- 字典：`DICT_4X4_50`
-- 标记 ID：`6`
-- 标记实际尺寸：5 cm × 5 cm
-
-### 2. ArUco 识别流程
-
-ArUco 识别过程主要包括以下步骤：
-
-1. **输入图像** — 从摄像头或文件读取图像
-2. **转换为灰度图** — 降低计算复杂度
-3. **检测候选方形区域** — 查找图像中的四边形候选区
-4. **解码 ArUco ID** — 通过字典匹配确认标记 ID
-5. **绘制检测框和 ID 信息** — 在原始图像上标注识别结果
-
-### 3. 距离估算方法
-
-当已知 ArUco 标记的实际宽度时，可以通过图像中的像素宽度估算距离。
-
-基本公式：
+### 识别流程
 
 ```
-距离 = 实际宽度 × 焦距 / 图像中的像素宽度
+输入图像 → 灰度转换 → 四边形检测 → 字典匹配 → 输出 ID + 角点
 ```
 
-其中：
-- `实际宽度`：ArUco 标记的真实尺寸（本实验为 0.05 m）
-- `焦距`：摄像头像素焦距（本实验设为 700 px）
-- `像素宽度`：图像中标记的像素宽度（由角点坐标计算）
+### 距离估算
 
----
+基于相似三角形原理：
 
-## 四、代码实现 (`aruco_generate_detect.py`)
-
-```python
-import cv2
-import numpy as np
-import math
-import os
-
-os.makedirs("img", exist_ok=True)
-
-print("Week 12：ArUco ID 6 生成、识别与距离估算")
-print("----------------------------------------")
-
-# 使用课堂常见的 4x4 字典
-aruco = cv2.aruco
-dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
-
-# 生成 ID 6 的 ArUco 标记
-marker_id = 6
-marker_size = 300
-
-if hasattr(aruco, "generateImageMarker"):
-    marker_img = aruco.generateImageMarker(dictionary, marker_id, marker_size)
-else:
-    marker_img = aruco.drawMarker(dictionary, marker_id, marker_size)
-
-# 放到白色画布上，方便检测
-canvas = np.ones((500, 600), dtype=np.uint8) * 255
-canvas[100:400, 150:450] = marker_img
-
-# 转成彩色图用于绘制结果
-color_img = cv2.cvtColor(canvas, cv2.COLOR_GRAY2BGR)
-
-# 兼容不同 OpenCV 版本的检测写法
-if hasattr(aruco, "ArucoDetector"):
-    parameters = aruco.DetectorParameters()
-    detector = aruco.ArucoDetector(dictionary, parameters)
-    corners, ids, rejected = detector.detectMarkers(canvas)
-else:
-    parameters = aruco.DetectorParameters_create()
-    corners, ids, rejected = aruco.detectMarkers(
-        canvas, dictionary, parameters=parameters
-    )
-
-detected_img = color_img.copy()
-
-if ids is not None:
-    aruco.drawDetectedMarkers(detected_img, corners, ids)
-
-    for i, detected_id in enumerate(ids.flatten()):
-        pts = corners[i][0]
-
-        # 计算图像中标记的像素宽度
-        edge1 = np.linalg.norm(pts[0] - pts[1])
-        edge2 = np.linalg.norm(pts[2] - pts[3])
-        pixel_width = (edge1 + edge2) / 2
-
-        # 简单距离估算：距离 = 实际宽度 × 焦距 / 像素宽度
-        real_marker_size_m = 0.05
-        focal_length_px = 700
-        distance_m = real_marker_size_m * focal_length_px / pixel_width
-
-        cv2.putText(
-            detected_img,
-            f"ID: {detected_id}",
-            (30, 40),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (0, 0, 255),
-            2
-        )
-
-        cv2.putText(
-            detected_img,
-            f"Distance: {distance_m:.2f} m",
-            (30, 85),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (0, 128, 0),
-            2
-        )
-
-        print(f"识别成功：ArUco ID = {detected_id}")
-        print(f"像素宽度：{pixel_width:.2f} px")
-        print(f"估算距离：{distance_m:.2f} m")
-else:
-    print("未识别到 ArUco 标记")
-
-# 保存结果图
-cv2.imwrite("img/aruco_detect.png", detected_img)
-cv2.imwrite("img/distance_demo.png", detected_img)
-
-print("----------------------------------------")
-print("已生成：img/aruco_detect.png")
-print("已生成：img/distance_demo.png")
-print("程序结束")
+```
+距离 = 实际宽度 × 焦距 / 像素宽度
 ```
 
-运行命令：
+| 参数 | 值 | 说明 |
+|------|-----|------|
+| 实际宽度 | 0.05 m | ArUco 标记真实尺寸 |
+| 焦距 | 700 px | 摄像头像素焦距（估算值） |
+| 像素宽度 | 由角点计算 | 图像中检测到的标记宽度 |
+
+## 目录结构
+
+```
+Week12/
+├── README.md                    # 本报告
+├── aruco_generate_detect.py     # ArUco 生成、识别与距离估算程序
+└── img/
+    ├── img12-1.jpg              # 手机摄像头 ArUco 识别
+    ├── img12-2.jpg              # 距离估算实验
+    ├── aruco_detect.png         # ArUco ID 6 识别结果
+    └── distance_demo.png        # 距离估算标注结果
+```
+
+## 实验步骤
+
+### 1. 生成 ArUco 标记
+
+使用 `DICT_4X4_50` 字典生成 ID 为 6 的 ArUco 标记，输出为 300×300 像素的黑白图像。
+
+### 2. 识别标记
+
+将标记放置在白色画布上，调用 `detectMarkers` 检测角点和 ID，确认是否正确识别。
+
+### 3. 距离估算
+
+从识别到的四个角点计算标记的像素宽度，结合已知的实际宽度和估算焦距，推算出标记与摄像头的距离。
+
+## 关键命令
 
 ```bash
+# 安装依赖
+pip install opencv-python numpy
+
+# 运行 ArUco 生成与检测程序
 python3 aruco_generate_detect.py
 ```
 
+## 代码核心逻辑
+
+```python
+# 生成标记
+dictionary = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
+marker_img = aruco.generateImageMarker(dictionary, marker_id=6, marker_size=300)
+
+# 识别标记
+corners, ids, rejected = detector.detectMarkers(canvas)
+
+# 距离估算
+pixel_width = (edge1 + edge2) / 2
+distance_m = real_marker_size_m * focal_length_px / pixel_width  # 0.05 * 700 / pixel_width
+```
+
+## 实验证据
+
+### ArUco 识别过程
+
+<img src="img/img12-1.jpg" width="800" alt="手机摄像头 ArUco 识别">
+
+*手机摄像头对准 ArUco 标记进行实时识别*
+
+### 识别与距离估算结果
+
+<img src="img/img12-2.jpg" width="800" alt="ArUco 距离估算实验">
+
+*标记 ID 和估算距离已标注在图像上*
+
+<img src="img/aruco_detect.png" width="800" alt="ArUco ID 6 识别结果">
+
+*程序生成的 ArUco ID 6 标记识别结果*
+
+<img src="img/distance_demo.png" width="800" alt="距离估算标注">
+
+*距离估算数值标注在检测框上方*
+
+## 遇到的问题与解决
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| OpenCV 版本兼容性 | 新版 OpenCV 使用 `ArucoDetector` 类，旧版使用 `detectMarkers` 函数 | 使用 `hasattr` 判断版本，分别实现两种调用方式 |
+| 距离估算偏差较大 | 焦距参数 700 为粗略估算值，未经过标定 | 可通过标准棋盘格标定获得更精确的焦距值 |
+| 低光照下识别率下降 | ArUco 依赖清晰的边缘检测 | 确保充足光照，或增大标记尺寸提高对比度 |
+
+## 总结与反思
+
+### 核心收获
+
+1. **视觉定位原理**：通过已知尺寸的标记和单目摄像头即可估算距离，这是机器人定位的基础技术。公式 `距离 = 实际尺寸 × 焦距 / 像素尺寸` 简洁但实用
+2. **ArUco 的优势**：相比 QR 码，ArUco 专为机器视觉优化——边框清晰、角度鲁棒、可同时识别多个标记
+3. **工程兼容性**：OpenCV 不同版本的 API 差异较大，编写兼容代码是工程实践的重要环节
+
+### 延伸思考
+
+距离估算的精度高度依赖摄像头标定精度。在后续项目中（如机器人抓取），可以：
+- 使用 ChArUco 棋盘进行更精确的相机标定
+- 结合多个 ArUco 标记进行位姿估计（PnP 算法）
+- 融合 IMU 数据进行多传感器定位
+
 ---
 
-## 五、实验结果与分析
-
-程序成功生成了 ArUco ID 6 标记并进行了识别和距离估算。识别结果在图像上标注了标记 ID 和估算距离，验证了 ArUco 标记作为机器人视觉定位手段的可行性。
-
-距离估算的精度受以下因素影响：
-- 标记实际尺寸的测量精度
-- 摄像头焦距的标定精度
-- 图像中角点检测的精度
-
----
-
-## 六、实验截图
-
-### 1. ArUco ID 6 识别结果
-
-![ArUco识别结果](img/aruco_detect.png)
-
-### 2. 距离估算结果
-
-![距离估算结果](img/distance_demo.png)
-
+[返回实验导航](../README.md)
