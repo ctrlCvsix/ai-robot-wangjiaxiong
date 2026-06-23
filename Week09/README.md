@@ -19,7 +19,8 @@
 Week09/
 ├── README.md         # 本报告
 ├── math_run.png      # 数学基础运行截图
-└── path_result.png   # 路径规划结果截图
+├── path_result.png   # 路径规划结果截图
+└── ros2_voice_topic.png  # ROS2 语音话题截图
 ```
 
 ## 实验步骤
@@ -80,6 +81,12 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 ### 数学基础运行
 
 <img src="math_run.png" width="800" alt="数学基础运行截图">
+
+### ROS2 语音话题
+
+<img src="img/ros2_voice_topic.png" width="800" alt="ROS2 语音交互话题">
+
+*ROS2 环境中语音相关话题的运行状态*
 
 *路径规划相关数学基础的运行验证*
 
