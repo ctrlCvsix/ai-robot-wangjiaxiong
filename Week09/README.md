@@ -88,12 +88,6 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 
 *ROS2 环境中语音相关话题的运行状态*
 
-<img src="img/screenshot_2.png" width="800" alt="ROS2 语音交互话题">
-
-*ROS2 环境中语音相关话题的运行状态*
-
-<img src="img/screenshot_2.png" width="800" alt="ROS2 语音交互话题">
-
 *ROS2 环境中语音相关话题的运行状态*
 
 *路径规划相关数学基础的运行验证*
