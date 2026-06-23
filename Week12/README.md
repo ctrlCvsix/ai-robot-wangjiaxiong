@@ -54,8 +54,6 @@ Week12/
 ├── README.md                    # 本报告
 ├── aruco_generate_detect.py     # ArUco 生成、识别与距离估算程序
 └── img/
-    ├── img12-1.jpg              # 手机摄像头 ArUco 识别
-    ├── img12-2.jpg              # 距离估算实验
     ├── aruco_detect.png         # ArUco ID 6 识别结果
     └── distance_demo.png        # 距离估算标注结果
 ```
@@ -100,18 +98,6 @@ distance_m = real_marker_size_m * focal_length_px / pixel_width  # 0.05 * 700 / 
 ```
 
 ## 实验证据
-
-### ArUco 识别过程
-
-<img src="img/img12-1.jpg" width="800" alt="手机摄像头 ArUco 识别">
-
-*手机摄像头对准 ArUco 标记进行实时识别*
-
-### 识别与距离估算结果
-
-<img src="img/img12-2.jpg" width="800" alt="ArUco 距离估算实验">
-
-*标记 ID 和估算距离已标注在图像上*
 
 <img src="img/aruco_detect.png" width="800" alt="ArUco ID 6 识别结果">
 
