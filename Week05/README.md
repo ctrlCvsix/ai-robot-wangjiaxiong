@@ -80,18 +80,6 @@ joint_positions = p.calculateInverseKinematics(
 
 *机械臂从初始姿态运动到 IK 求解的目标位姿*
 
-### RViz2 启动
-
-<img src="img/rviz_start.png" width="800" alt="RViz2 启动截图">
-
-*RViz2 启动，准备接收机械臂仿真数据*
-
-### RViz2 话题配置
-
-<img src="img/rviz_topic.png" width="800" alt="RViz2 话题配置">
-
-*配置相关话题，实时显示机械臂关节状态*
-
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |
