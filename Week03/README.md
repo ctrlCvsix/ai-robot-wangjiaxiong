@@ -92,18 +92,6 @@ Publisher (控制程序)  →  /turtle1/cmd_vel (Twist)  →  Subscriber (turtle
 
 *通过命令行发布 Twist 消息控制 turtlesim 运动*
 
-### Python 程序运行
-
-<img src="img/python_run.png" width="800" alt="Python 程序运行截图">
-
-*Python 控制节点成功运行，自动发布速度指令*
-
-### 长方形轨迹
-
-<img src="img/rectangle.png" width="800" alt="长方形轨迹">
-
-*通过控制线速度和角速度的时序组合，乌龟画出长方形轨迹*
-
 ## 遇到的问题与解决
 
 | 问题 | 原因 | 解决方案 |
