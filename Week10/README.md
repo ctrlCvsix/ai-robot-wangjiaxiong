@@ -85,7 +85,6 @@ docker run -it --rm -v $(pwd):/workspace python:3.10 python3 opencv_test.py
 *OpenCV 图像处理成功输出*
 
 <img src="opencv-result.png" width="800" alt="视觉实验输出">
-n<img src="img&docker_command.png" width="800" alt="Docker 命令执行">
 
 *视觉实验最终输出结果*
 

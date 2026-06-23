@@ -89,9 +89,6 @@ Publisher (控制程序)  →  /turtle1/cmd_vel (Twist)  →  Subscriber (turtle
 ### 命令行控制
 
 <img src="images/dawugui.png" width="800" alt="大乌龟控制截图">
-n<img src="images&dawugui.png" width="800" alt="大乌龟控制截图">
-n<img src="images&dawugui.png" width="800" alt="大乌龟控制截图">
-n<img src="images&dawugui.png" width="800" alt="大乌龟控制截图">
 
 *通过命令行发布 Twist 消息控制 turtlesim 运动*
 
