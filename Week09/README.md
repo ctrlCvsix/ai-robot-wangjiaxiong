@@ -80,19 +80,19 @@ ROS2 中语音交互被抽象为标准的话题发布/订阅模式：
 
 ### ROS2 语音话题
 
-<img src="img/ros2_voice_topic.png" width="800" alt="ROS2 语音交互话题">
+<img src="img/math_run.png" width="800" alt="ROS2 语音交互话题">
 
 *ROS2 环境中语音相关话题的运行状态*
 
-<img src="img/ros2_voice_topic.png" width="800" alt="ROS2 语音交互话题">
+<img src="img/math_run.png" width="800" alt="ROS2 语音交互话题">
 
 *ROS2 环境中语音相关话题的运行状态*
 
-<img src="img/ros2_voice_topic.png" width="800" alt="ROS2 语音交互话题">
+<img src="img/math_run.png" width="800" alt="ROS2 语音交互话题">
 
 *ROS2 环境中语音相关话题的运行状态*
 
-<img src="img/ros2_voice_topic.png" width="800" alt="ROS2 语音交互话题">
+<img src="img/math_run.png" width="800" alt="ROS2 语音交互话题">
 
 *ROS2 环境中语音相关话题的运行状态*
 
