@@ -151,18 +151,6 @@ PID 是机器人运动控制最基础也最重要的算法之一，广泛应用�
 
 ## 实验截图
 
-### ROS2 节点列表
-
-![ROS2 节点](img/node_list.png)
-
-*`ros2 node list` 输出，确认 turtlesim 节点正常运行*
-
-### ROS2 话题列表
-
-![ROS2 话题](img/topic_list.png)
-
-*`ros2 topic list` 输出，确认 /turtle1/cmd_vel 等话题已注册*
-
 ### 小乌龟正方形轨迹
 
 ![正方形轨迹](img/square_result.png)
