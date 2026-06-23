@@ -35,10 +35,7 @@
 | Week11 | GitHub Pages 部署实践 | 图片 | [打开](./Week11) |
 | Week12 | ArUco 标记检测与距离估算 | 图片 | [打开](./Week12) |
 | Week13 | 四足 Trot 步态仿真 | Python 代码 | [打开](./Week13) |
-| Week14 | 远程摄像头环境配置 | 图片 | [打开](./Week14) |
-| Week15 | 期末课程笔记 | README | [打开](./Week15) |
-| Week16 | 扩展练习槽位 | README | [打开](./Week16) |
-| Week17 | 扩展练习槽位 | README | [打开](./Week17) |
+| Week14 | 期末小组项目：机器狗遥控与乌龟迷宫 | 图片 / PDF / 代码 | [打开](./Week14) |
 
 ## 仓库地图
 
@@ -57,10 +54,7 @@ ai-robot-wangjiaxiong/
 |-- Week11/               # GitHub Pages 部署
 |-- Week12/               # ArUco 标记检测与距离估算
 |-- Week13/               # trot.py 步态仿真
-|-- Week14/               # 远程摄像头工作流
-|-- Week15/               # 期末笔记
-|-- Week16/               # 扩展练习
-|-- Week17/               # 扩展练习
+|-- Week14/               # 期末小组项目（机器狗/乌龟迷宫）
 </pre>
 
 ## 评审路径
