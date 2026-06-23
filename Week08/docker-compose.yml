@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  ros2-desktop:
+    image: tiryoh/ros2-desktop-vnc:humble
+    container_name: ros2_desktop
+    ports:
+      - "6080:80"
+      - "8080:8080"
+    volumes:
+      - ./workspace:/home/ubuntu/workspace
+    environment:
+      - RESOLUTION=1920x1080
+      - USER=ubuntu
+      - PASSWORD=ubuntu
+    restart: unless-stopped
