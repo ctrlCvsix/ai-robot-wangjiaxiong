@@ -138,12 +138,4 @@ Week14/
 
 ---
 
-<img src="1_copy.jpeg" width="800" alt="补充截图：项目运行效果">
-
-*补充截图：项目运行效果*
-
-<img src="11_copy.jpeg" width="800" alt="补充截图：系统部署验证">
-
-*补充截图：系统部署验证*
-
 [返回实验导航](../README.md)

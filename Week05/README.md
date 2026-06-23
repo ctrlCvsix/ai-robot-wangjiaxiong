@@ -103,8 +103,4 @@ joint_positions = p.calculateInverseKinematics(
 
 ---
 
-<img src="img/rviz_start_copy.png" width="800" alt="补充截图：RViz2 可视化">
-
-*补充截图：RViz2 可视化*
-
 [返回实验导航](../README.md)

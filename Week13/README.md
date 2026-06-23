@@ -149,8 +149,4 @@ python3 quadruped_walk.py
 
 ---
 
-<img src="img/project_checklist_copy.png" width="800" alt="补充截图：步态仿真过程">
-
-*补充截图：步态仿真过程*
-
 [返回实验导航](../README.md)
