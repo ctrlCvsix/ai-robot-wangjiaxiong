@@ -136,6 +136,28 @@ Week14/
 └── docker-compose.yml            # ROS2 容器编排
 ```
 
+## 实验证据
+
+<img src="week14_1.png" width="800" alt="期末项目截图1">
+
+*期末项目运行效果*
+
+<img src="week14_2.png" width="800" alt="期末项目截图2">
+
+*期末项目运行效果*
+
+<img src="week14_3.png" width="800" alt="期末项目截图3">
+
+*期末项目运行效果*
+
+<img src="week14_4.png" width="800" alt="期末项目截图4">
+
+*期末项目运行效果*
+
+<img src="week14_5.png" width="800" alt="期末项目截图5">
+
+*期末项目运行效果*
+
 ---
 
 [返回实验导航](../README.md)
