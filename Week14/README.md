@@ -136,6 +136,12 @@ Week14/
 └── docker-compose.yml            # ROS2 容器编排
 ```
 
+## 演示视频
+
+<video src="turtlesim_auto.mp4" controls width="800"></video>
+
+*TurtleSim 自动迷宫探索演示*
+
 ## 实验证据
 
 <img src="week14_1.png" width="800" alt="期末项目截图1">
