@@ -138,9 +138,9 @@ Week14/
 
 ## 演示视频
 
-<video src="turtlesim_auto.mp4" controls width="800"></video>
+[![TurtleSim 自动迷宫探索演示](week14_1.png)](turtlesim_auto.mp4)
 
-*TurtleSim 自动迷宫探索演示*
+*🎬 点击上图观看 TurtleSim 自动迷宫探索演示视频（MP4）*
 
 ## 实验证据
 
