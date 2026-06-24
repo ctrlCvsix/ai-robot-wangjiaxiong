@@ -18,7 +18,7 @@
 ```
 Week03/
 ├── README.md         # 本报告
-├── turtle_control.py # Python 控制节点
+├── rectangle_mover.py # Python 控制节点
 ├── dawugui.png       # 大乌龟控制截图
 ├── python_run.png    # Python 程序运行截图
 └── rectangle.png     # 长方形轨迹截图
@@ -45,7 +45,7 @@ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angu
 编写 Python 程序通过 rclpy 创建发布者节点，实现自动化控制：
 
 ```bash
-python3 turtle_control.py
+python3 rectangle_mover.py
 ```
 
 ### 4. 观察话题通信
@@ -71,7 +71,7 @@ ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angu
 ros2 topic info /turtle1/cmd_vel
 
 # 运行 Python 控制程序
-python3 turtle_control.py
+python3 rectangle_mover.py
 ```
 
 ## ROS2 话题通信模型
