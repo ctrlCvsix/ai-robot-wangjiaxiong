@@ -18,7 +18,7 @@
 ```
 Week10/
 ├── README.md             # 本报告
-├── opencv_test.py        # OpenCV 验证程序
+├── opencv_demo.py        # OpenCV 验证程序
 ├── opencv-result.png     # 图像处理结果
 ├── docker_command.png    # Docker 命令执行截图
 └── opencv_result.png     # 视觉实验输出
@@ -49,7 +49,7 @@ pip install opencv-python numpy
 编写并运行图像处理测试程序，验证 OpenCV 在容器中的功能正常：
 
 ```bash
-python3 opencv_test.py
+python3 opencv_demo.py
 ```
 
 ### 4. 输出验证
@@ -67,7 +67,7 @@ docker images
 docker pull python:3.10
 
 # 挂载工作目录运行容器
-docker run -it --rm -v $(pwd):/workspace python:3.10 python3 opencv_test.py
+docker run -it --rm -v $(pwd):/workspace python:3.10 python3 opencv_demo.py
 ```
 
 ## 实验证据
