@@ -18,7 +18,7 @@
 ```
 Week04/
 ├── README.md           # 本报告
-├── simulation.py       # 四足机器人仿真程序
+├── kinematics_demo.py       # 四足机器人仿真程序
 ├── dog.png             # 仿真截图
 ├── kinematics_run.png  # 运动学运行截图
 └── pose_echo.png       # 位姿话题监听截图
@@ -76,7 +76,7 @@ ros2 topic echo /robot/odom
 pip install pybullet numpy
 
 # 运行仿真
-python3 simulation.py
+python3 kinematics_demo.py
 ```
 
 ## 实验证据
