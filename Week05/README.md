@@ -19,7 +19,7 @@
 ```
 Week05/
 ├── README.md           # 本报告
-├── arm_ik.py           # 机械臂逆运动学程序
+├── marker_demo.py           # 机械臂逆运动学程序
 ├── jixiebi.webm        # 机械臂运动视频
 ├── rviz_start.png      # RViz2 启动截图
 └── rviz_topic.png      # RViz2 话题配置截图
@@ -36,7 +36,7 @@ Week05/
 给定末端执行器的目标位姿（位置 + 方向），使用 PyBullet 内置 IK 求解器计算各关节角度：
 
 ```bash
-python3 arm_ik.py
+python3 marker_demo.py
 ```
 
 ### 3. 虚拟相机配置
@@ -54,7 +54,7 @@ python3 arm_ik.py
 pip install pybullet
 
 # 运行逆运动学仿真
-python3 arm_ik.py
+python3 marker_demo.py
 
 # RViz2 可视化
 rviz2
