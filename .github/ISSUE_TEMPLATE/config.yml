@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 实验报告问题
+    url: https://github.com/ctrlCvsix/ai-robot-wangjiaxiong/discussions
+    about: 一般性问题请在 Discussions 中讨论
